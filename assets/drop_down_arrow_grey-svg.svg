@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg width="7px" height="5px" viewBox="0 0 7 5" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 3.8.3 (29802) - http://www.bohemiancoding.com/sketch -->
+    <title>Inline Select Drop Down Arrow</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Unite-Style-Guide" transform="translate(-1270.000000, -790.000000)" fill="#111111">
+            <g id="Group-10" transform="translate(80.000000, 78.000000)">
+                <g id="Group-9" transform="translate(723.000000, 564.000000)">
+                    <g id="Group-7" transform="translate(0.000000, 97.000000)">
+                        <path fill="#BCBCBC" d="M471.486921,54.8927176 L474,52.0997643 L473.01642,51 L470.500174,53.7961904 L467.983929,51 L467,52.0997643 L469.513378,54.8927726 L469.507016,54.8998429 L470.490596,56 L470.500174,55.9893558 L470.509752,56 L471.493333,54.8998429 L471.486921,54.8927176 Z" id="Inline-Select-Drop-Down-Arrow" transform="translate(470.500000, 53.500000) scale(1, -1) rotate(180.000000) translate(-470.500000, -53.500000) "></path>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

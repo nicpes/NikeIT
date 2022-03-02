@@ -1,0 +1,824 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>App Nike Run Club. Nike IT</title>
+</head>
+<body>
+<header>
+    <nav>
+        <div class="nav-top">
+            <div class="nav-top-left">
+                <svg height="24px" width="24px" fill="#111" viewBox="0 0 26 32"><path d="M14.4 5.52v-.08q0-.56.36-1t.92-.44 1 .36.48.96-.36 1-.96.4l-.24.08.08.12-.08.44-.16 1.28q.08.08.08.16l-.16.8q-.08.16-.16.24l-.08.32q-.16.64-.28 1.04t-.2.64V12q-.08.4-.12.64t-.28.8q-.16.32 0 1.04l.08.08q0 .24.2.56t.2.56q.08 1.6-.24 2.72l.16.48q.96.48.56 1.04l.4.16q.96.48 1.36.84t.8.76q.32.08.48.24l.24.08q1.68 1.12 3.36 2.72l.32.24v.08l-.08.16.24.16h.08q.24.16.32.16h.08q.08 0 .16-.08l.16-.08q.16-.16.32-.24h.32q.08 0 0 .08l-.32.16-.4.48h.56l.56.08q.24-.08.4-.16l.4-.24q.24-.08.48.16h.08q.08.08-.08.24l-.96.88q-.4.32-.72.4l-1.04.72q-.08.08-.16 0l-.24-.32-.16-.32-.2-.28-.24-.32-.2-.24-.16-.2-.32-.24q-.16 0-.32-.08l-1.04-.8q-.24 0-.56-.24-1.2-1.04-1.6-1.28l-.48-.32-.96-.16q-.48-.08-1.28-.48l-.64-.32q-.64-.32-.88-.32l-.32-.16q-.32-.08-.48-.16l-.16-.16q-.16 0-.32.08l-1.6.8-2 .88q-.8.64-1.52 1.04l-.88.4-1.36.96q-.16.16-.32 0l-.16.16q-.24.08-.32.08l-.32.16v.16h-.16l-.16.24q-.16.32-.32.36t-.2.12-.08.12l-.16.16-.24.16-.36-.04-.48.08-.32.08q-.4.08-.64-.12t-.4-.6q-.16-.24.16-.4l.08-.08q.08-.08.24-.08h.48L1.6 26l.32-.08q0-.16.08-.24.08-.08.24-.08v-.08q-.08-.16-.08-.32-.08-.16-.04-.24t.08-.08h.04l.08.24q.08.4.24.24l.08-.16q.08-.16.24-.16l.16.16.16-.16-.08-.08q0-.08.08-.08l.32-.32q.4-.48.96-.88 1.12-.88 2.4-1.36.4-.4.88-.4.32-.56.96-1.2.56-.4.8-.56.16-.32.4-.32H10l.16-.16q.16-.08.24-.16v-.4q0-.4.08-.64t.4-.24l.32-.32q-.16-.32-.16-.72h-.08q-.16-.24-.16-.48-.24-.4-.32-.64h-.24q-.08.24-.4.32l-.08.16q-.32.56-.56.84t-.88.68q-.4.4-.56.88-.08.24 0 .48l-.08.16h.08q0 .16.08.16h.08q.16.08.16.2t-.24.08-.36-.16-.2-.12l-.24.24q-.16.24-.32.2t-.08-.12l.08-.08q.08-.16 0-.16l-.64.16q-.08.08-.2 0t.04-.16l.4-.16q0-.08-.08-.08-.32.16-.64.08l-.4-.08-.08-.08q0-.08.08-.08.32.08.8-.08l.56-.24.64-.72.08-.16q.32-.64.68-1.16t.76-.84l.08-.32q.16-.32.32-.56t.4-.64l.24-.32q.32-.48.72-.48l.24-.24q.08-.08.08-.24l.16-.16-.08-.08q-.48-.4-.48-.72-.08-.56.36-.96t.88-.36.68.28l.16.16q.08 0 .08.08l.32.16v.24q.16.16.16.24.16-.24.48-.56l.4-1.28q0-.32.16-.64l.16-.24v-.16l.24-.96h.16l.24-.96q.08-.24 0-.56l-.32-.8z"></path></svg>
+                <svg height="24px" width="24px" fill="#111" viewBox="0 0 39 33"><path d="M10.94 25.626l-4.236-5.501L.201 22.28l3.734-5.756L.11 10.777l6.59 2.031 4.026-5.474.14 6.785 6.64 2.175-6.594 2.446.028 6.886zm.824 7.239l13.952-16.393L11.806.107h11.697l14.871 16.389-14.8 16.369h-11.81z"></path></svg>
+            </div>
+
+            <div class="nav-top-right">
+                <ul>
+                    <li class="link-help"><a href="#">Aiuto</a></li> |
+                    <div class="nav-top-right help">
+                        <h4>Aiuto</h4>
+                        <ul>
+                            <li><a href="#">Stato ordine</a></li>
+                            <li><a href="#">Spedizione e consegna</a></li>
+                            <li><a href="#">Restituzioni</a></li>
+                            <li><a href="#">Tabelle delle taglie e delle misure</a></li>
+                            <li><a href="#">Contattaci</a></li>
+                            <li><a href="#">Informativa sulla privacy</a></li>
+                            <li><a href="#">Condizioni di vendita</a></li>
+                            <li><a href="#">Condizioni d'uso</a></li>
+                            <li><a href="#">Invia feedback</a></li>
+                        </ul>
+                    </div> 
+                    <li><a href="#">Unisciti a noi</a></li> |
+                    <li><a href="#">Accedi</a></li> 
+                </ul>
+            </div>  
+        </div>
+        <div class="nav-center">
+            <div class="nav-center-logo">
+                <svg class="pre-logo-svg" height="60px" width="60px" fill="#111" viewBox="0 0 69 32"><path d="M68.56 4L18.4 25.36Q12.16 28 7.92 28q-4.8 0-6.96-3.36-1.36-2.16-.8-5.48t2.96-7.08q2-3.04 6.56-8-1.6 2.56-2.24 5.28-1.2 5.12 2.16 7.52Q11.2 18 14 18q2.24 0 5.04-.72z"></path></svg>
+            </div>
+            <div class="nav-center-menu">
+                <ul>
+                    <li class="link-new-releases"><a href="#">Novità</a></li>
+                    <div class="nav-center-menu new-releases">
+                        <div class="nav-center-menu col-1">
+                            <h4>In evidenza</h4>
+                            <ul>
+                                <li><a href="#">Tutti i nuovi arrivi</a></li>
+                                <li><a href="#">Best seller</a></li>
+                                <li><a href="#">Calendario dei lanci SNKRS</a></li>
+                            </ul>
+                        </div>
+                        <div class="nav-center-menu col-2">
+                            <h4>Novità per lui</h4>
+                            <ul>
+                                <li><a href="#">Scarpe</a></li>
+                                <li><a href="#">Abbigliamento</a></li>
+                                <li><a href="#">Attrezzatura</a></li>
+                                <li><a href="#">Tutte le novità - Uomo</a></li>
+                            </ul>
+                        </div>
+                        <div class="nav-center-menu col-3">
+                            <h4>Novità per lei</h4>
+                            <ul>
+                                <li><a href="#">Scarpe</a></li>
+                                <li><a href="#">Abbigliamento</a></li>
+                                <li><a href="#">Attrezzatura</a></li>
+                                <li><a href="#">Tutte le novità - Donna</a></li>
+                            </ul>
+                        </div>
+                        <div class="nav-center-menu col-4">
+                            <h4>Novità per bambini</h4>
+                            <ul>
+                                <li><a href="#">Scarpe - Bambino/Ragazzo</a></li>
+                                <li><a href="#">Abbigliamento - Bambino/Ragazzo</a></li>
+                                <li><a href="#">Attrezzatura - Bambina/Ragazza</a></li>
+                                <li><a href="#">Tutte le novità - Bambini</a></li>
+                            </ul>
+                        </div>
+                        <div class="nav-center-menu col-5">
+                            <h4>Acquista per brand</h4>
+                            <ul>
+                                <li><a href="#">Nike Sportswear</a></li>
+                                <li><a href="#">NikeLab</a></li>
+                                <li><a href="#">Jordan</a></li>
+                                <li><a href="#">Nike SB</a></li>
+                                <li><a href="#">ACG</a></li>
+                                <li><a href="#">Nike Pro</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <li class="link-men"><a href="#">Uomo</a></li>
+                    <div class="nav-center-menu men">
+                        <div class="nav-center-menu col-1">
+                            <h4>In evidenza</h4>
+                            <ul>
+                                <li><a href="#">Novità</a></li>
+                                <li><a href="#">Best seller</a></li>
+                                <li><a href="#">Calendario dei lanci SNKRS</a></li>
+                                <li><a href="#">Accesso per i member</a></li>
+                                <li><a href="#">Nike Essentials</a></li>
+                                <li><a href="#">Materiali sostenibili</a></li>
+                            </ul>
+                        </div>
+                        <div class="nav-center-menu col-2">
+                            <h4>Scarpe</h4>
+                            <ul>
+                                <li><a href="#">Tutte le scarpe</a></li>
+                                <li><a href="#">Tutte le scarpe scontate</a></li>
+                                <li><a href="#">Lifestyle</a></li>
+                                <li><a href="#">Running</a></li>
+                                <li><a href="#">Basket</a></li>
+                                <li><a href="#">Calcio</a></li>
+                                <li><a href="#">Jordan</a></li>
+                                <li><a href="#">Fitness e Training</a></li>
+                                <li><a href="#">Skateboard</a></li>
+                                <li><a href="#">Tennis</a></li>
+                                <li><a href="#">Golf</a></li>
+                                <li><a href="#">Personalizza con Nike By You</a></li>
+                            </ul>
+
+                            <h4>Accessori</h4>
+                            <ul>
+                                <li><a href="#">Tutti gli accessori</a></li>
+                                <li><a href="#">Borse e zaini</a></li>
+                            </ul>
+                        </div>
+                        <div class="nav-center-menu col-3">
+                            <h4>Abbigliamento</h4>
+                            <ul>
+                                <li><a href="#">Tutto l'abbigliamento</a></li>
+                                <li><a href="#">Tutto l'abbigliamento scontato</a></li>
+                                <li><a href="#">Felpe</a></li>
+                                <li><a href="#">Maglie e t-shirt</a></li>
+                                <li><a href="#">Pantaloni e tights</a></li>
+                                <li><a href="#">Tute</a></li>
+                                <li><a href="#">Set coordinati</a></li>
+                                <li><a href="#">Shorts</a></li>
+                                <li><a href="#">Giacche e smanicati</a></li>
+                                <li><a href="#">Divise e maglie</a></li>
+                                <li><a href="#">Polo</a></li>
+                                <li><a href="#">Plus size & tall</a></li>
+                                <li><a href="#">Calze</a></li>
+                            </ul>
+                        </div>
+                        <div class="nav-center-menu col-4">
+                            <h4>Acquista per sport</h4>
+                            <ul>
+                                <li><a href="#">Running</a></li>
+                                <li><a href="#">Calcio</a></li>
+                                <li><a href="#">Basket</a></li>
+                                <li><a href="#">Tennis</a></li>
+                                <li><a href="#">Golf</a></li>
+                                <li><a href="#">Fitness e training</a></li>
+                                <li><a href="#">Cross training</a></li>
+                                <li><a href="#">Skateboard</a></li>
+                                <li><a href="#">Yoga</a></li>
+                            </ul>
+
+                            <h4>Personalizza</h4>
+                            <ul>
+                                <li><a href="#">Nike By You</a></li>
+                                <li><a href="#">Scarpe personalizzate</a></li>
+                                <li><a href="#">Maglie da calcio personalizzate</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <li class="link-women"><a href="#">Donna</a></li>
+                    <div class="nav-center-menu women">
+                        <div class="nav-center-menu col-1">
+                            <h4>In evidenza</h4>
+                            <ul>
+                                <li><a href="#">Novità</a></li>
+                                <li><a href="#">Best seller</a></li>
+                                <li><a href="#">Calendario dei lanci SNKRS</a></li>
+                                <li><a href="#">Accesso per i member</a></li>
+                                <li><a href="#">Nike Essentials</a></li>
+                                <li><a href="#">Materiali sostenibili</a></li>
+                            </ul>
+                        </div>
+                        <div class="nav-center-menu col-2">
+                            <h4>Scarpe</h4>
+                            <ul>
+                                <li><a href="#">Tutte le scarpe</a></li>
+                                <li><a href="#">Tutte le scarpe scontate</a></li>
+                                <li><a href="#">Lifestyle</a></li>
+                                <li><a href="#">Running</a></li>
+                                <li><a href="#">Fitness e training</a></li>
+                                <li><a href="#">Jordan</a></li>
+                                <li><a href="#">Basket</a></li>
+                                <li><a href="#">Tennis</a></li>
+                                <li><a href="#">Calcio</a></li>
+                                <li><a href="#">Golf</a></li>
+                                <li><a href="#">Skateboard</a></li>
+                                <li><a href="#">Personalizza con Nike By You</a></li>
+                            </ul>
+
+                            <h4>Accessori</h4>
+                            <ul>
+                                <li><a href="#">Tutti gli accessori</a></li>
+                                <li><a href="#">Borse e zaini</a></li>
+                            </ul>
+                        </div>
+                        <div class="nav-center-menu col-3">
+                            <h4>Abbigliamento</h4>
+                            <ul>
+                                <li><a href="#">Tutto l'abbigliamento</a></li>
+                                <li><a href="#">Tutto l'abbigliamento scontato</a></li>
+                                <li><a href="#">Pantaloni e leggings</a></li>
+                                <li><a href="#">Maglie e t-shirt</a></li>
+                                <li><a href="#">Felpe</a></li>
+                                <li><a href="#">Shorts</a></li>
+                                <li><a href="#">Reggiseni sportivi</a></li>
+                                <li><a href="#">Giacche e smanicati</a></li>
+                                <li><a href="#">Tute</a></li>
+                                <li><a href="#">Set coordinati</a></li>
+                                <li><a href="#">Gonne e abiti</a></li>
+                                <li><a href="#">Divise e maglie</a></li>
+                                <li><a href="#">Plus size</a></li>
+                                <li><a href="#">Calze</a></li>
+                            </ul>
+                        </div>
+                        <div class="nav-center-menu col-4">
+                            <h4>Acquista per sport</h4>
+                            <ul>
+                                <li><a href="#">Running</a></li>
+                                <li><a href="#">Fitness e training</a></li>
+                                <li><a href="#">Yoga</a></li>
+                                <li><a href="#">Cross training</a></li>
+                                <li><a href="#">Tennis</a></li>
+                                <li><a href="#">Golf</a></li>
+                                <li><a href="#">Danza</a></li>
+                                <li><a href="#">Basket</a></li>
+                                <li><a href="#">Calcio</a></li>
+                                <li><a href="#">Skateboard</a></li>
+                            </ul>
+
+                            <h4>Personalizza</h4>
+                            <ul>
+                                <li><a href="#">Nike By You</a></li>
+                                <li><a href="#">Scarpe personalizzate</a></li>
+                                <li><a href="#">Maglie da calcio personalizzate</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <li class="link-kids"><a href="#">Bambini</a></li>
+                    <div class="nav-center-menu kids">
+                        <div class="nav-center-menu col-1">
+                            <h4>In evidenza</h4>
+                            <ul>
+                                <li><a href="#">Novità</a></li>
+                                <li><a href="#">Best seller</a></li>
+                                <li><a href="#">Fleece</a></li>
+                                <li><a href="#">Articoli sportivi</a></li>
+                                <li><a href="#">Danza</a></li>
+                                <li><a href="#">Materiali sostenibili</a></li>
+                            </ul>
+                        </div>
+                        <div class="nav-center-menu col-2">
+                            <h4>Scarpe</h4>
+                            <ul>
+                                <li><a href="#">Tutte le scarpe</a></li>
+                                <li><a href="#">Tutte le scarpe sportive</a></li>
+                                <li><a href="#">Neonati e bimbi piccoli (17-27)</a></li>
+                                <li><a href="#">Bambini (27,5-35)</a></li>
+                                <li><a href="#">Ragazzi (35,5-40)</a></li>
+                                <li><a href="#">Lifestyle</a></li>
+                                <li><a href="#">Calcio</a></li>
+                                <li><a href="#">Running</a></li>
+                                <li><a href="#">Jordan</a></li>
+                                <li><a href="#">Air Max</a></li>
+                                <li><a href="#">Air Force 1</a></li>
+                            </ul>
+                        </div>
+                        <div class="nav-center-menu col-3">
+                            <h4>Abbigliamento Bambino/Ragazzo</h4>
+                            <ul>
+                                <li><a href="#">Tutto l'abbigliamento - Bambino/Ragazzo</a></li>
+                                <li><a href="#">Neonati e bimbi piccoli (0-36 mesi)</a></li>
+                                <li><a href="#">Bambini (96-128 cm)</a></li>
+                                <li><a href="#">Ragazzi (122-170 cm)</a></li>
+                                <li><a href="#">Abbigliamento sportivo</a></li>
+                                <li><a href="#">Felpe</a></li>
+                                <li><a href="#">Pantaloni e tights</a></li>
+                                <li><a href="#">Tute</a></li>
+                                <li><a href="#">Giacche e smanicati</a></li>
+                                <li><a href="#">Maglie e t-shirt</a></li>
+                                <li><a href="#">Shorts</a></li>
+                                <li><a href="#">Divise e maglie</a></li>
+                                <li><a href="#">Calze</a></li>
+                            </ul>
+
+                            <h4>Accessori</h4>
+                            <ul>
+                                <li><a href="#">Borse e zaini</a></li>
+                                <li><a href="#">Cappelli</a></li>
+                            </ul>
+                        </div>
+                        <div class="nav-center-menu col-4">
+                            <h4>Abbigliamento Bambina/Ragazza</h4>
+                            <ul>
+                                <li><a href="#">Tutto l'abbigliamento - Bambina/Ragazza</a></li>
+                                <li><a href="#">Neonati e bimbi piccoli (0-36 mesi)</a></li>
+                                <li><a href="#">Bambini (96-128 cm)</a></li>
+                                <li><a href="#">Ragazzi (122-170 cm)</a></li>
+                                <li><a href="#">Abbigliamento sportivo</a></li>
+                                <li><a href="#">Reggiseni sportivi</a></li>
+                                <li><a href="#">Felpe</a></li>
+                                <li><a href="#">Pantaloni e leggings</a></li>
+                                <li><a href="#">Tute</a></li>
+                                <li><a href="#">Giacche e smanicati</a></li>
+                                <li><a href="#">Maglie e t-shirt</a></li>
+                                <li><a href="#">Shorts</a></li>
+                                <li><a href="#">Gonne e abiti</a></li>
+                                <li><a href="#">Divise e maglie</a></li>
+                                <li><a href="#">Calze</a></li>
+                            </ul>
+                        </div>
+                        <div class="nav-center-menu col-5">
+                            <h4>Neonati e bimbi piccoli</h4>
+                            <ul>
+                                <li><a href="#">Bimba</a></li>
+                                <li><a href="#">Bimbo</a></li>
+                                <li><a href="#">Tutte le scarpe - Bimbi</a></li>
+                                <li><a href="#">Tutto l'abbigliamento - Bimbi</a></li>
+                                <li><a href="#">Completi per bimbi</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <li class="link-outlet"><a href="#">Outlet</a></li>
+                    <div class="nav-center-menu outlet">
+                        <div class="nav-center-menu col-1">
+                            <h4>In evidenza</h4>
+                            <ul>
+                                <li><a href="#">Tutti gli articoli scontati</a></li>
+                                <li><a href="#">Capi invernali scontati</a></li>
+                            </ul>
+                        </div>
+                        <div class="nav-center-menu col-2">
+                            <h4>Sconti per lui</h4>
+                            <ul>
+                                <li><a href="#">Best seller per lui</a></li>
+                                <li><a href="#">Scarpe</a></li>
+                                <li><a href="#">Abbigliamento</a></li>
+                                <li><a href="#">Accessori</a></li>
+                                <li><a href="#">Felpe</a></li>
+                                <li><a href="#">Pantaloni e tights</a></li>
+                                <li><a href="#">Giacche e smanicati</a></li>
+                                <li><a href="#">Tutti gli articoli in sconto - Uomo</a></li>
+                            </ul>
+                        </div>
+                        <div class="nav-center-menu col-3">
+                            <h4>Sconti per lei</h4>
+                            <ul>
+                                <li><a href="#">Best seller per lei</a></li>
+                                <li><a href="#">Scarpe</a></li>
+                                <li><a href="#">Abbigliamento</a></li>
+                                <li><a href="#">Accessori</a></li>
+                                <li><a href="#">Felpe</a></li>
+                                <li><a href="#">Pantaloni e leggings</a></li>
+                                <li><a href="#">Giacche e smanicati</a></li>
+                                <li><a href="#">Reggiseni sportivi</a></li>
+                                <li><a href="#">Tutti gli articoli in sconto - Donna</a></li>
+                            </ul>
+                        </div>
+                        <div class="nav-center-menu col-4">
+                            <h4>Sconti per bambini</h4>
+                            <ul>
+                                <li><a href="#">Best seller per bambini</a></li>
+                                <li><a href="#">Scarpe</a></li>
+                                <li><a href="#">Abbigliamento</a></li>
+                                <li><a href="#">Accessori</a></li>
+                                <li><a href="#">Felpe</a></li>
+                                <li><a href="#">Pantaloni e leggings</a></li>
+                                <li><a href="#">Giacche e smanicati</a></li>
+                                <li><a href="#">Reggiseni sportivi</a></li>
+                                <li><a href="#">Tutti gli articoli in sconto - Bambini</a></li>
+                            </ul>
+                        </div>
+                        <div class="nav-center-menu col-5">
+                            <h4>Sconti per sport</h4>
+                            <ul>
+                                <li><a href="#">Running</a></li>
+                                <li><a href="#">Fitness e training</a></li>
+                                <li><a href="#">Yoga</a></li>
+                                <li><a href="#">Calcio</a></li>
+                                <li><a href="#">Basket</a></li>
+                                <li><a href="#">Tennis</a></li>
+                                <li><a href="#">Golf</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <li class="link-collections"><a href="#">Collezioni</a></li>
+                    <div class="nav-center-menu collections">
+                        <div class="nav-center-menu col-1">
+                            <h4>Di tendenza</h4>
+                            <ul>
+                                <li><a href="#">Scarpe Air</a></li>
+                                <li><a href="#">FlyEase</a></li>
+                                <li><a href="#">Flyknit</a></li>
+                                <li><a href="#">Air Zoom</a></li>
+                                <li><a href="#">Jordan X Paris Saint-Germain</a></li>
+                                <li><a href="#">Scarpe LeBron James</a></li>
+                                <li><a href="#">Scarpe SuperRep</a></li>
+                                <li><a href="#">Air Force 1 - Donna</a></li>
+                                <li><a href="#">Air Force 1 bianche</a></li>
+                                <li><a href="#">Nike Essentials</a></li>
+                            </ul>
+                        </div>
+                        <div class="nav-center-menu col-2">
+                            <h4>Lifestyle</h4>
+                            <ul>
+                                <li><a href="#">Air Force 1</a></li>
+                                <li><a href="#">Blazer</a></li>
+                                <li><a href="#">Air Max</a></li>
+                                <li><a href="#">Air Max 90</a></li>
+                                <li><a href="#">Air Max 270</a></li>
+                                <li><a href="#">Air Max Plus</a></li>
+                                <li><a href="#">Staple Kicks</a></li>
+                                <li><a href="#">Air Jordan 1</a></li>
+                            </ul>
+                        </div>
+                        <div class="nav-center-menu col-3">
+                            <h4>Running</h4>
+                            <ul>
+                                <li><a href="#">React</a></li>
+                                <li><a href="#">Pegasus</a></li>
+                                <li><a href="#">Air Zoom</a></li>
+                            </ul>
+                        </div>
+                        <div class="nav-center-menu col-4">
+                            <h4>Calcio</h4>
+                            <ul>
+                                <li><a href="#">Phantom</a></li>
+                                <li><a href="#">Mercurial</a></li>
+                                <li><a href="#">Tiempo</a></li>
+                                <li><a href="#">Calcio a 5</a></li>
+                                <li><a href="#">Collezione delle nazionali</a></li>
+                                <li><a href="#">Squadre di calcio</a></li>
+                                <li><a href="#">F.C. Barcelona</a></li>
+                                <li><a href="#">Liverpool F.C.</a></li>
+                                <li><a href="#">Paris Saint-Germain</a></li>
+                                <li><a href="#">Cristiano Ronaldo</a></li>
+                                <li><a href="#">Inter</a></li>
+                            </ul>
+                        </div>
+                        <div class="nav-center-menu col-5">
+                            <h4>Bambini</h4>
+                            <ul>
+                                <li><a href="#">Air Max</a></li>
+                                <li><a href="#">Air Force</a></li>
+                                <li><a href="#">Running</a></li>
+                                <li><a href="#">Calcio</a></li>
+                                <li><a href="#">Basket</a></li>
+                                <li><a href="#">Fitness e training</a></li>
+                                <li><a href="#">Jordan</a></li>
+                                <li><a href="#">Skateboard</a></li>
+                                <li><a href="#">Tennis</a></li>
+                                <li><a href="#">Golf</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </ul>
+            </div>
+            <div class="nav-center-right">
+                <form action="index.html">
+                    <svg class="pre-search-input-icon" fill="#111" height="30px" width="30px" viewBox="0 0 24 24"><path d="M21.71 20.29L18 16.61A9 9 0 1 0 16.61 18l3.68 3.68a1 1 0 0 0 1.42 0 1 1 0 0 0 0-1.39zM11 18a7 7 0 1 1 7-7 7 7 0 0 1-7 7z"></path></svg>
+                    <input type="search" name="search" id="search" placeholder="Cerca" />
+                </form>
+
+                <svg width="24px" height="24px" fill="#111" viewBox="0 0 24 24"><path d="M21.11 4a6.6 6.6 0 0 0-4.79-1.92A6.27 6.27 0 0 0 12 3.84 6.57 6.57 0 0 0 2.89 4c-2.8 2.68-2.45 7.3.88 10.76l6.84 6.63A2 2 0 0 0 12 22a2 2 0 0 0 1.37-.54l.2-.19.61-.57c.6-.57 1.42-1.37 2.49-2.41l2.44-2.39 1.09-1.07c3.38-3.55 3.8-8.1.91-10.83zm-2.35 9.4l-.25.24-.8.79-2.44 2.39c-1 1-1.84 1.79-2.44 2.36L12 20l-6.83-6.68c-2.56-2.66-2.86-6-.88-7.92a4.52 4.52 0 0 1 6.4 0l.09.08a2.12 2.12 0 0 1 .32.3l.9.94.9-.94.28-.27.11-.09a4.52 4.52 0 0 1 6.43 0c1.97 1.9 1.67 5.25-.96 7.98z"></path></svg>
+                <svg width="24px" height="24px" fill="#111" viewBox="0 0 24 24"><path d="M16 7a1 1 0 0 1-1-1V3H9v3a1 1 0 0 1-2 0V3a2 2 0 0 1 2-2h6a2 2 0 0 1 2 2v3a1 1 0 0 1-1 1z"></path><path d="M20 5H4a2 2 0 0 0-2 2v13a3 3 0 0 0 3 3h14a3 3 0 0 0 3-3V7a2 2 0 0 0-2-2zm0 15a1 1 0 0 1-1 1H5a1 1 0 0 1-1-1V7h16z"></path></svg>
+            </div>
+        </div>
+        <div class="nav-bottom">
+            <p>Gli studenti ricevono uno sconto del 10%</p><p><a href="#">Scopri di più</a></p>
+        </div>
+    </nav>
+
+    <div class="hero">
+        <h2>Nike Run Club</h2>
+        <video autoplay muted loop class="hero-video">
+            <source src="assets/hero.mp4" type="video/mp4">
+        </video>
+        <div class="hero-description">
+            <h3>La tua guida per una migliore esperienza di running. Scaricala subito<br />gratuitamente.</h3>
+            <a href="#" class="button">Download per iOS</a> <a href="#" class="button">Download per Android</a>
+            <p>L'app Nike Run Club ti motiva a correre in modo costante, con una community che ti terrà compagnia e ti farà divertire. Hai appena iniziato a correre? Ci siamo<br />
+                noi. Hai bisogno di un coach per stare al passo o di un amico per farti compagnia? Eccoci. Vuoi che monitoriamo le tue statistiche mentre tu pensi al panorama?<br />
+                Nessun problema. Anche se non ti va di <a href="#">correre</a> oggi, Nike Run Club ti offre suggerimenti per il benessere che ti aiuteranno a prepararti per domani. Inizia<br />
+                quando e dove vuoi: saremo sempre con te.</p>
+        </div>
+    </div>
+</header> 
+
+<main>
+    <img src="assets/app-nike-run-club-jpg.jpg" alt="" class="img-001" />
+    <h4>Perché Nike Run Club?</h4>
+    <p>Sia che tu non abbia mai corso in vita tua, che ti stia preparando per la tua<br />
+        prima 5 km o che ti stia allenando per una maratona, l'app Nike Run Club ha gli<br />
+        strumenti giusti per aiutarti. Ti aiuteremo a <a href="#">iniziare</a> e saremo al tuo fianco<br />
+        durante tutto il percorso.</p>
+
+    <img src="assets/app-nike-run-club-jpg (1).jpg" alt="" class="img-002" />
+    <h4>Corse guidate con audio*: una voce che ti dà una<br />marcia in più.</h4>
+    <p>Con atleti professionisti accreditati di livello mondiale, è come avere con te un<br />
+        coach in ogni fase del percorso.<br /><br />
+        * Non disponibile in tutti i paesi</p>
+    <p><a href="#" class="button">Scopri di più</a></p>
+
+    <img src="assets/app-nike-run-club-jpg (5).jpg" alt="" class="img-002" />
+    <h4>Sfide: create per farti muovere, sfidare gli amici e<br />
+        condividere tutto con la community.</h4>
+    <p>Partecipa a una sfida individuale settimanale o mensile (e invita gli amici a<br />
+        partecipare con te) o punta a un obiettivo più ambizioso insieme alla community<br />
+        Nike Run Club.</p>
+    <p><a href="#" class="button">Scopri di più</a></p>
+
+    <img src="assets/app-nike-run-club-jpg (3).jpeg" alt="" class="img-002" />
+    <h4>Run Tracker: monitoreremo la tua corsa mentre ti<br />
+        godi il paesaggio.</h4>
+    <p>Pianifica il tuo percorso, che siano corse brevi o lunghe, e mantieni il tuo ritmo<br />
+        con la nostra funzione Run Tracker. E i tuoi progressi sono a portata di clic:<br />
+        avrai davanti ai tuoi occhi dettagli come andatura, frequenza cardiaca e<br />
+        cadenza, così potrai vedere quanta strada hai fatto.</p>
+    <p><a href="#" class="button">Scopri di più</a></p>
+
+    <img src="assets/app-nike-run-club-jpg (5).jpeg" alt="" class="img-001" style="margin-bottom: 60px;" />
+    <h4 style="font-size: 26px;">Una marcia in più con Nike Run Club</h4>
+    <p><a href="#" class="button">Scopri di più</a></p>
+
+    <p style="margin-top: 90px;">Nike Run Club ti offre gli strumenti per supportarti prima, durante e dopo la<br />
+        corsa, indipendentemente dal motivo che ti ha spinto a iniziare. Dalle corse<br />
+        guidate con audio ai suggerimenti sull'alimentazione e ai consigli di mindfulness<br />
+        sulla corsa, Nike Run Club ti guiderà ogni volta.</p>
+
+    <h2 style="margin-left: 20px;">Raccolte di corse guidate con audio</h2>
+    <section class="carousel">
+        <div class="col-1">
+            <img src="assets/app-nike-run-club-jpg (2).jpg" alt="" />
+            <h4>Raccolta "Per iniziare"</h4>
+            <p>Iniziare è facile. Le nostre corse guidate offrono consigli che ti faranno migliorare costantemente, dalla First Run di 20 minuti alla rilassata 5K Run.</p>
+            <p><a href="#" class="button">Scopri di più</a></p>
+        </div>
+        <div class="col-2">
+            <img src="assets/app-nike-run-club-jpg (6).jpg" alt="" />
+            <h4>Mindful Running</h4>
+            <p>Collega mente e corpo durante ogni corsa con le coach di NRC: le tue corse diventeranno un momento di riflessione e di crescita.</p>
+            <p><a href="#" class="button">Scopri di più</a></p>
+        </div>
+        <div class="col-3">
+            <img src="assets/app-nike-run-club-jpg (7).jpg" alt="" />
+            <h4>Corse basate sulla distanza</h4>
+            <p>Dalle corse di 1 km alle mezze maratone, i nostri esperti ti offriranno consigli efficaci preparandoti al meglio per quando affronterai la gara.</p>
+            <p><a href="#" class="button">Scopri di più</a></p>
+        </div>
+        <div class="col-4">
+            <img src="assets/app-nike-run-club-jpg (7).jpeg" alt="" />
+            <h4>Speed run</h4>
+            <p>Per andare più veloce serve determinazione, ma non ti preoccupare, avrai tutto il necessario. Scegli fra le molteplici Speed run progettate per aumentare la forza esplosiva.</p>
+            <p><a href="#" class="button">Scopri di più</a></p>
+        </div>
+        <div class="col-5">
+            <img src="assets/app-nike-run-club-jpg (8).jpeg" alt="" />
+            <h4>Long run</h4>
+            <p>Sviluppa la resistenza nelle corse di oltre 30 minuti mentre ascolti coach Nike Run Club e/o atleti Nike. La nostra app ti fornirà gli strumenti e le tecniche necessarie per affrontare le lunghe distanze.</p>
+            <p><a href="#" class="button">Scopri di più</a></p>
+        </div>
+    </section>
+
+    <h2>Vieni a correre con noi</h2>
+    <section class="slider">
+        <div class="col-1">
+            <img src="assets/app-nike-run-club-jpg (9).jpeg" alt="" />
+            <h4>Sfoggia i tuoi colori</h4>
+            <p>Fai vedere agli altri la distanza totale percorsa grazie a un display che mostra un codice colore durante la corsa. Controlla i colori della tua corsa con Nike Run Club per scoprire dove hai corso più veloce e più lentamente.</p>
+            <p><a href="#" class="button">Scopri di più</a></p>
+        </div>
+        <div class="col-2">
+            <img src="assets/app-nike-run-club-jpg (10).jpeg" alt="" />
+            <h4>Tagga le tue scarpe</h4>
+            <p>Monitora i chilometri percorsi con ogni paio di scarpe da running che possiedi, anche quelle di altri marchi. Aggiungi le tue scarpe a Nike Run Club e imposta un obiettivo di chilometri per ricevere notifiche quando ti avvicini.</p>
+            <p><a href="#" class="button">Scopri di più</a></p>
+        </div>
+        <div class="col-3">
+            <img src="assets/app-nike-run-club-jpg (11).jpeg" alt="" />
+            <h4>Condividi la tua corsa</h4>
+            <p>Personalizza i tuoi post aggiungendo foto, statistiche e adesivi, quindi decidi chi può vederli, scegliendo tra tutti gli utenti del social network o solo i tuoi amici Nike.</p>
+            <p><a href="#" class="button">Scopri di più</a></p>
+        </div>
+    </section>
+
+    <h4>Come usare l'app Nike Run Club</h4>
+    <p>Nike Run Club è stata creata per aiutare ogni runner a migliorarsi. Ci sono tanti<br />
+        modi per personalizzare l'app e ottenere tutti i benefici di cui hai bisogno.</p>
+    <p>Trova la tua andatura Nike Run Club</p>
+    <p>Il ritmo a cui corri ti dà un'idea della distanza che puoi coprire in un determinato<br />
+        lasso di tempo. Inoltre, ti consente di sapere se devi accelerare, rallentare o<br />
+        mantenere un determinato passo. Trova la tua andatura NRC toccando lo<br />
+        schermo durante una corsa o cercando l'andatura media nella sezione "Attività"<br />
+        dell'app.</p>
+    <p>Spingiti oltre i tuoi limiti con le sfide Nike Run Club</p>
+    <p>Poniti un traguardo da raggiungere con le sfide Nike Run Club. Che si tratti di<br />
+        correre 15 km in una settimana, 100 km in un mese o quello che preferisci,<br />
+        stabilisci un obiettivo e affrontalo con il supporto degli amici e della community<br />
+        di running. Quando completerai le sfide, guadagnerai ricompense e badge così<br />
+        potrai goderti ciò che hai conquistato.</p>
+    <p>Integra altre app</p>
+    <p>Mantieni la concentrazione e lascia che il ritmo ti spinga sempre più avanti. Con<br />
+        le integrazioni Spotify e Apple Music di Nike Run Club, puoi ascoltare musica e<br />
+        podcast mentre corri. Puoi anche collegare Nike Run Club e Nike Training Club<br />
+        per condividere corse e allenamenti tra le due app.</p>
+    <img src="assets/app-nike-run-club-jpg (12).jpeg" alt="" class="img-001" />
+
+    <h4>Utilizzala su più dispositivi</h4>
+    <p>Android</p>
+    <p>NRC è disponibile per telefoni e tablet Android. Scaricala da <a href="#">Google Play</a> per<br />
+        iniziare.</p>
+    <p>iOS</p>
+    <p>Scarica Nike Run Club dall'Apple Store per utilizzarla sul tuo iPhone, iPad o<br />
+        iPod Touch</p>
+    <p>Dispositivi TomTom e Garmin</p>
+    <p>È facile collegare Nike Run Club con dispositivi partner come TomTom e<br />
+        Garmin. Per utilizzare al meglio l'applicazione, segui queste indicazioni:</p>
+    <p><ul>
+        <li>Apri NRC.</li>
+        <li>Vai al tuo profilo e tocca "Impostazioni".</li>
+        <li>Seleziona "Partner".</li>
+        <li>Scegli l'app o il dispositivo partner che desideri connettere a Nike Run Club.</li>
+    </ul></p>
+    <p>Apple Watch</p>
+    <p>Non vuoi andare a correre con lo smartphone? Nessun problema: puoi usare<br />
+        Nike Run Club anche sul tuo Apple Watch. Ricevi tutte le notifiche e la guida di<br />
+        cui hai bisogno, direttamente dal tuo polso.</p>
+
+    <h4 style="margin-top: 80px;">Noi siamo con te, in qualsiasi modo e luogo tu<br />voglia correre</h4>
+    <p>Non ci importa che atleta sei, noi siamo qui per supportarti. Se sei principiante,<br />
+        fai le cose gradualmente e imposta i tuoi obiettivi e le tue sfide. Disattiva il GPS<br />
+        e utilizza Nike Run Club per correre sul tapis roulant, se preferisci stare al<br />
+        chiuso. O forse il running non fa per te? Va bene. Usa Nike Run Club per le tue<br />
+        camminate, per seguire i tuoi percorsi e monitorare i tuoi progressi.</p>
+    <img src="assets/app-nike-run-club-jpg (14).jpeg" alt="" class="img-001" />
+
+    <h4>Le recensioni di Nike Run Club</h4>
+    <p>Karla Cabañas</p>
+    <p style="font-style: italic;">Non posso correre senza. Mi piace tenere traccia delle mie corse e battere i<br />
+        miei record. Mi piacciono i commenti incoraggianti di atleti e star dello sport.</p>
+    <p>Francesca Sebestyen</p>
+    <p style="font-style: italic;">Adoro NRC, è un personal trainer nelle tue mani. Non ci sono scuse per non<br />
+        correre, camminare o persino fare jogging… piccoli passi.</p>
+    <p>Leah Hall</p>
+    <p style="font-style: italic;">Ho corso 8 km e non potevo fermarmi perché [il coach] continuava a dire "Sei a<br />
+        metà strada" e poi "Tre chilometri alla fine". Non pensavo che ce l'avrei fatta, e<br />
+        invece sì. Sono sempre sul pezzo riguardo ai miei obiettivi e l'app mi aiuta a<br />
+        raggiungerli.</p>
+
+    <h4 style="margin-top: 80px;">Iscriviti a Nike Run Club</h4>
+    <p>Scarica Nike Run Club oggi stesso e iscriviti per iniziare a monitorare le tue<br />
+        corse e registrare i tuoi progressi. Trova Nike Run Club nell'App Store per <a href="#">iOS</a> e<br />
+        Google Play Store per <a href="#">Android</a>.</p>
+    <img src="assets/app-nike-run-club-jpg (15).jpeg" alt="" class="img-001" />
+
+    <h4>Domande frequenti sull'app NRC</h4>
+    <p>Trova le risposte ad alcune delle domande più comuni su Nike Run Club qui<br />
+        sotto:</p>
+    <p>Perché l'attività NRC non si sincronizza con il mio dispositivo?</p>
+    <p><em>Dispositivo mobile</em>: assicurati di aver connesso il dispositivo al Wi-Fi. Tocca la<br />
+        scheda "Attività", quindi "Cronologia". Scorri verso il basso per aggiornare e<br />
+        sincronizzare i dati.</p>
+    <p><em>Sistema operativo Apple Watch and Wear</em>: se l'orologio è collegato al<br />
+        dispositivo, la corsa dovrebbe essere sincronizzata automaticamente. Se stai<br />
+        correndo senza il dispositivo, l'attività verrà sincronizzata quando l'orologio<br />
+        viene ricollegato. Se continui ad avere problemi di sincronizzazione delle corse,<br />
+        <a href="#">contattaci</a>.</p>
+    <p>Perché l'app Nike Run Club non funziona?</p>
+    <p>Come posso visualizzare le mie corse online?</p>
+    <p>Accedi all'app Nike Run Club e seleziona la scheda "Attività". Qui troverai tutti i<br />
+        dettagli delle tue corse. Se non sai ancora come utilizzare l'app, leggi le nostre<br />
+        <a href="#">Domande frequenti</a>.</p>
+    <p>Come accedo alla dashboard di Nike Run Club?</p>
+    <p>Dopo aver scaricato l'app e registrato un account, puoi accedere alla dashboard<br />
+        dall'app.</p>
+    <p>Come faccio a iniziare la mia corsa su Nike Run Club?</p>
+    <p>Per iniziare una corsa guidata, seleziona "Start", oppure "Download" e quindi<br />
+        "Start". In alternativa, vai su Inizia subito e tocca "Start".</p>
+    <p>Come posso modificare la mia corsa?</p>
+    <p>Per modificare l'allenamento, trova la tua corsa nella schermata delle attività,<br />
+        quindi tocca il menu sopra il titolo e seleziona "Modifica corsa".</p>
+    <p>Le corse sono registrate in chilometri o miglia?</p>
+    <p>Le corse possono essere registrate sia in chilometri che in miglia. Puoi<br />
+        scegliere l'unità di misura nel menu "Impostazioni".</p>
+    <p>Come si accede all'app NRC?</p>
+    <p>Scarica e apri l'app sul tuo dispositivo per accedere alla schermata di accesso<br />
+        di Nike Run Club. Seleziona "Accedi", quindi inserisci l'indirizzo e-mail e la<br />
+        password per accedere al tuo profilo.</p>
+    <p>Quanto costa l'app NRC?</p>
+    <p>L'app Nike Run Club è scaricabile gratuitamente, e non è necessario alcun<br />
+        acquisto nell'app.</p>
+    <img src="assets/app-nike-run-club-png (1).png" alt="" class="img-001" />
+
+    <h2>Prova le altre nostre app</h2>
+    <section class="slider">
+        <div class="col-1">
+            <img src="assets/app-nike-run-club-jpg (17).jpeg" alt="" />
+            <h4>Nike App</h4>
+            <p>Tutto quello di cui hai bisogno per dare il massimo</p>
+            <p><a href="#" class="button">Scopri di più</a></p>
+        </div>
+        <div class="col-2">
+            <img src="assets/app-nike-run-club-jpg (18).jpeg" alt="" />
+            <h4>Nike Training Club</h4>
+            <p>Il tuo personal trainer ovunque ti trovi</p>
+            <p><a href="#" class="button">Scopri di più</a></p>
+        </div>
+        <div class="col-3">
+            <img src="assets/app-nike-run-club-jpg (19).jpeg" alt="" />
+            <h4>SNKRS</h4>
+            <p>Tutto quello che vuoi sapere sulle sneakers</p>
+            <p><a href="#" class="button">Scopri di più</a></p>
+        </div>
+    </section>
+
+</main>
+
+<footer>
+<div class="footer-top">
+    <div class="footer-menu">
+    <div class="footer-col1">
+        <ul>
+            <li><a href="#">Gift Card</a></li>
+            <li><a href="#">Trova un negozio</a></li>
+            <li><a href="#">Iscriviti alla newsletter</a></li>
+            <li><a href="#">Diventa member</a></li>
+            <li><a href="#">Sconto studenti</a></li>
+            <li><a href="#">Invia feedback</a></li>
+            <li><a href="#">Codici promozionali</a></li>
+        </ul>
+    </div>
+
+    <div class="footer-col2">
+        <ul><h4><a href="#">Hai bisogno di aiuto?</a></h4>
+            <li><a href="#">Stato dell'ordine</a></li>
+            <li><a href="#">Spedizione e consegna</a></li>
+            <li><a href="#">Resi</a></li>
+            <li><a href="#">Opzioni di pagamento</a></li>
+            <li><a href="#">Contattaci</a></li>
+            <li><a href="#">Assistenza Codici promozionali Nike</a></li>
+        </ul>
+    </div>
+
+    <div class="footer-col3">
+        <ul><h4><a href="#">Informazioni su Nike</a></h4>
+            <li><a href="#">News</a></li>
+            <li><a href="#">Lavora con noi</a></li>
+            <li><a href="#">Investitori</a></li>
+            <li><a href="#">Sostenibilità</a></li>
+        </ul>
+    </div>
+
+    <div class="footer-col4">
+        <ul><h4><a href="#">Le App Nike</a></h4>
+            <li><a href="#">Nike Run Club</a></li>
+            <li><a href="#">Nike Training Club</a></li>
+        </ul>
+    </div>
+</div>
+
+    <div class="footer-social-icons">
+        <a href="#"><svg class="social-link-icon" width="30px" fill="#111" height="30px" viewBox="0 0 24 24"><path d="M12 0C9.813 0 7.8.533 5.96 1.6A11.793 11.793 0 0 0 1.6 5.96C.533 7.8 0 9.813 0 12s.533 4.2 1.6 6.04a11.793 11.793 0 0 0 4.36 4.36C7.8 23.467 9.813 24 12 24s4.2-.533 6.04-1.6a11.793 11.793 0 0 0 4.36-4.36C23.467 16.2 24 14.187 24 12s-.533-4.2-1.6-6.04a11.793 11.793 0 0 0-4.36-4.36C16.2.533 14.187 0 12 0zm6 9.28v.4c0 1.387-.333 2.72-1 4a8.186 8.186 0 0 1-2.84 3.12c-1.333.853-2.827 1.28-4.48 1.28a8.535 8.535 0 0 1-4.56-1.28h.72c1.387 0 2.613-.427 3.68-1.28-.64 0-1.213-.2-1.72-.6-.507-.4-.867-.92-1.08-1.56l.56.16c.373 0 .64-.053.8-.16a2.67 2.67 0 0 1-1.72-1 2.913 2.913 0 0 1-.68-1.88c.427.267.88.4 1.36.4-.907-.533-1.36-1.36-1.36-2.48 0-.533.133-1.04.4-1.52.8.96 1.72 1.707 2.76 2.24a8.133 8.133 0 0 0 3.4.88c-.107-.16-.16-.4-.16-.72 0-.8.293-1.493.88-2.08s1.28-.88 2.08-.88 1.547.293 2.24.88c.48-.107 1.12-.347 1.92-.72-.213.747-.64 1.28-1.28 1.6H18c.747-.16 1.28-.32 1.6-.48-.533.693-1.067 1.253-1.6 1.68z"></path></svg></a>
+        <a href="#"><svg class="social-link-icon" width="30px" fill="#111" height="30px" viewBox="0 0 24 24"><path d="M12 0C9.813 0 7.8.533 5.96 1.6A11.793 11.793 0 0 0 1.6 5.96C.533 7.8 0 9.813 0 12s.533 4.2 1.6 6.04a11.793 11.793 0 0 0 4.36 4.36C7.8 23.467 9.813 24 12 24s4.2-.533 6.04-1.6a11.793 11.793 0 0 0 4.36-4.36C23.467 16.2 24 14.187 24 12s-.533-4.2-1.6-6.04a11.793 11.793 0 0 0-4.36-4.36C16.2.533 14.187 0 12 0zm3.12 12h-2v7.2H10.4V12H8.64V9.52h1.76V8c0-1.12.187-1.92.56-2.4.427-.587 1.2-.88 2.32-.88h2V7.2h-1.2c-.427 0-.693.067-.8.2-.107.133-.16.387-.16.76v1.2h2.16L15.12 12z"></path></svg></a>
+        <a href="#"><svg class="social-link-icon" width="30px" fill="#111" height="30px" viewBox="0 0 24 24"><path d="M11.28 17.6a.604.604 0 0 1-.2.24.43.43 0 0 1-.24.08c-.08 0-.133-.027-.16-.08a.557.557 0 0 1-.04-.24v-2.96h-.72v3.28a1 1 0 0 0 .12.52c.08.133.2.2.36.2.16 0 .307-.053.44-.16.133-.107.28-.24.44-.4v.48H12v-3.92h-.72v2.96zM6.96 14v-.8H9.6v.8h-.88v4.56h-.88V14h-.88zm4.96-4.72c-.107 0-.2-.04-.28-.12a.384.384 0 0 1-.12-.28v-2.4c0-.053.027-.107.08-.16.053-.053.147-.08.28-.08.133 0 .24.027.32.08a.27.27 0 0 1 .12.24v2.32c0 .107-.04.2-.12.28a.384.384 0 0 1-.28.12zm2 8.32c0-.64.027-1.307.08-2 0-.107-.04-.2-.12-.28-.08-.08-.16-.12-.24-.12h-.12l-.24.16v2.4l.24.16.16.08c.107 0 .173-.027.2-.08.027-.053.04-.16.04-.32zm.08-3.04c.213 0 .387.08.52.24.133.16.2.4.2.72v2.24c0 .267-.053.48-.16.64a.422.422 0 0 1-.44.2 2.1 2.1 0 0 1-.48-.12.506.506 0 0 1-.28-.24v.32h-.8V13.2h.8v1.76c.107-.107.213-.2.32-.28a.532.532 0 0 1 .32-.12zm3.92 5.12c.267-.213.427-.907.48-2.08.053-.587.107-1.147.16-1.68 0-.48-.053-1.013-.16-1.6-.107-1.173-.28-1.893-.52-2.16-.24-.267-1.267-.453-3.08-.56l-2.64-.08-2.72.08c-1.813.107-2.84.293-3.08.56-.24.267-.413.987-.52 2.16a16.07 16.07 0 0 0-.08 1.6c0 .533.027 1.093.08 1.68.107 1.173.28 1.88.52 2.12.24.24 1.267.44 3.08.6l2.72.08 2.64-.08c1.813-.16 2.853-.347 3.12-.56v-.08zM8.4 4h-.96l1.12 3.6v2.24h.96v-2.4L10.64 4h-.96l-.56 2.32h-.08L8.4 4zm2.32 2.56V8.8c0 .373.107.667.32.88.213.213.507.32.88.32s.667-.107.88-.32c.213-.213.32-.507.32-.88V6.56c0-.32-.107-.587-.32-.8-.213-.213-.507-.32-.88-.32s-.667.107-.88.32c-.213.213-.32.48-.32.8zm3.12-.96v3.6a1 1 0 0 0 .12.52c.08.133.213.2.4.2.187 0 .36-.04.52-.12.16-.08.32-.2.48-.36v.48h.88V5.6h-.88v3.2a.523.523 0 0 1-.24.24.645.645 0 0 1-.28.08c-.08 0-.133-.013-.16-.04-.027-.027-.04-.093-.04-.2V5.52h-.8v.08zM12 0c2.187 0 4.2.533 6.04 1.6a11.793 11.793 0 0 1 4.36 4.36C23.467 7.8 24 9.813 24 12s-.533 4.2-1.6 6.04a11.793 11.793 0 0 1-4.36 4.36C16.2 23.467 14.187 24 12 24s-4.2-.533-6.04-1.6a11.793 11.793 0 0 1-4.36-4.36C.533 16.2 0 14.187 0 12s.533-4.2 1.6-6.04A11.793 11.793 0 0 1 5.96 1.6C7.8.533 9.813 0 12 0zm4.56 16.08l-.08-.4c0-.16-.027-.28-.08-.36a.27.27 0 0 0-.24-.12.27.27 0 0 0-.24.12c-.053.08-.08.2-.08.36v.4h.72zm-.32-1.52c.32 0 .573.093.76.28.187.187.28.467.28.84v.96h-1.44v.8c0 .16.027.28.08.36.053.08.147.12.28.12.133 0 .227-.04.28-.12.053-.08.08-.227.08-.44v-.16h.72v.24c0 .373-.093.667-.28.88-.187.213-.453.32-.8.32-.347 0-.613-.107-.8-.32-.187-.213-.28-.507-.28-.88v-1.76c0-.32.107-.587.32-.8.213-.213.48-.32.8-.32z"></path></svg></a>
+        <a href="#"><svg class="social-link-icon" width="30px" fill="#111" height="30px" viewBox="0 0 24 24"><path d="M16 12.48a4.723 4.723 0 0 1-.56 1.48 3.93 3.93 0 0 1-1.04 1.16 3.428 3.428 0 0 1-1.92.68 3.628 3.628 0 0 1-1.96-.48 3.414 3.414 0 0 1-1.4-1.48c-.48-.96-.587-1.973-.32-3.04H7.68l.08 5.52c0 .107.04.213.12.32.08.107.173.16.28.16h8.32c.107 0 .213-.053.32-.16.107-.107.16-.213.16-.32V10.8h-1.12c.16.533.213 1.093.16 1.68zm-3.68 2c.64 0 1.2-.24 1.68-.72s.72-1.053.72-1.72a2.56 2.56 0 0 0-.68-1.76c-.453-.507-1.013-.76-1.68-.76s-1.24.24-1.72.72-.72 1.053-.72 1.72.227 1.253.68 1.76c.453.507 1 .76 1.64.76h.08zm4.16-7.6h-1.12c-.107 0-.213.053-.32.16-.107.107-.16.213-.16.32v1.36c.107.213.267.32.48.32h1.12c.16 0 .28-.053.36-.16a.532.532 0 0 0 .12-.32v-1.2c0-.107-.053-.213-.16-.32-.107-.107-.213-.16-.32-.16zM12 0C9.813 0 7.8.533 5.96 1.6A11.793 11.793 0 0 0 1.6 5.96C.533 7.8 0 9.813 0 12s.533 4.2 1.6 6.04a11.793 11.793 0 0 0 4.36 4.36C7.8 23.467 9.813 24 12 24s4.2-.533 6.04-1.6a11.793 11.793 0 0 0 4.36-4.36C23.467 16.2 24 14.187 24 12s-.533-4.2-1.6-6.04a11.793 11.793 0 0 0-4.36-4.36C16.2.533 14.187 0 12 0zm6.24 16.88l-.08.08v.08a.926.926 0 0 1-.28.68 1.3 1.3 0 0 1-.68.36H7.52a.871.871 0 0 1-.68-.32 1.536 1.536 0 0 1-.36-.72l-.08-.16.08-9.84c0-.267.093-.507.28-.72.187-.213.413-.347.68-.4h9.68a1.3 1.3 0 0 1 .68.36 1.3 1.3 0 0 1 .36.68l.08 9.92z"></path></svg></a>
+    </div>
+</div>
+
+    <div class="footer-bottom">
+        <div class="footer-copyright">
+            <svg height="15px" width="18px" fill="#111" viewBox="0 0 42 58"><path d="M21 0C9.4 0 0 9.5 0 21.2 0 39.9 21 58 21 58s21-18.1 21-36.8C42 9.5 32.6 0 21 0zm0 31c-5.5 0-10-4.5-10-10s4.5-10 10-10 10 4.5 10 10-4.5 10-10 10z"></path></svg>
+            <a href="#">Italia</a> © 2022 Nike, Inc. Tutti i diritti riservati
+        </div>
+        <div class="footer-links">
+            <a href="#" class="link-guide">Guide</a>
+            <div class="footer-links-guide">
+                <div class="footer-links-guide-col1">
+                    <ul>
+                        <li><a href="#">Nike Adapt</a></li>
+                        <li><a href="#">Nike FlyEase</a></li>
+                        <li><a href="#">Nike Free</a></li>
+                        <li><a href="#">Nike Vaporfly</a></li>
+                        <li><a href="#">Articoli per tifosi NBA</a></li>
+                    </ul>
+                </div>
+                <div class="footer-links-guide-col2">
+                    <ul>
+                        <li><a href="#">Nike Air</a></li>
+                        <li><a href="#">Nike Flyknit</a></li>
+                        <li><a href="#">Nike Pegasus</a></li>
+                        <li><a href="#">Nike Zoom Fly</a></li>
+                        <li><a href="#">Factory Store</a></li>
+                    </ul>
+                </div>
+                <div class="footer-links-guide-col3">
+                    <ul>
+                        <li><a href="#">Nike Air Max</a></li>
+                        <li><a href="#">Nike Flyleather</a></li>
+                        <li><a href="#">Nike React</a></li>
+                        <li><a href="#">Nike ZoomX</a></li>
+                    </ul>
+                </div>
+            </div>
+            <a href="#">Condizioni d’uso</a>
+            <a href="#">Condizioni di vendita</a>
+            <a href="#">Info Legali e Societarie</a>
+            <a href="#">Informativa sulla privacy e sui cookie</a><br />
+            <a href="#">Impostazioni sui cookie</a>
+        </div>
+    </div>
+</footer>
+</body>
+</html>

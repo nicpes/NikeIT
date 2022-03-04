@@ -30,10 +30,6 @@
     font-weight: bolder; 
 }
 
-.subtitle{
-   
-}
-
 
 .headertools{
     display: flex;
@@ -82,7 +78,7 @@
 
 .col{
     box-sizing: border-box;
-    width: 500px;
+    width: 400px;
     padding: 40px;
 }
 

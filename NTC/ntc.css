@@ -406,12 +406,14 @@ main {
 
 #container-img-friends {
   grid-area: container-img-friends;
+ display: flex;
+ justify-content: center;
 }
 
 img[src="assets/image/friends-ntc.jpg"] {
-  max-height: 100%;
-
-  max-width: 100%;
+ flex: 1;
+ max-width: 100%;
+  
 }
 
 .nike-training {
@@ -602,8 +604,29 @@ img[src="assets/image/friends-ntc.jpg"] {
   margin-top: 100px;
   display: flex;
   overflow-x: scroll;
+ 
+  
+}
+#scroll-img::-webkit-scrollbar-track {
+  width: 5px;
+
+  
+  border-radius: 10px;
 }
 
+#scroll-img::-webkit-scrollbar {
+  width: 4px;
+  background-color: red;
+}
+#scroll-img::-webkit-resizer{
+ width:10px;
+}
+#scroll-img::-webkit-scrollbar-thumb {
+  border-radius: 10px;
+
+   background-color: violet;
+  
+}
 #scroll-img ul{
 
     list-style: none;

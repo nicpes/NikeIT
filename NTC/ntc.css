@@ -92,10 +92,11 @@ header {
 }
 
 #nav-fix {
+  grid-area: nav-fix;
   background-color: white;
   position: sticky;
   position: -webkit-sticky;
-  width: 99vw;
+  width: 100%;
   display: flex;
   top: 0;
   height: 60px;
@@ -369,6 +370,7 @@ header {
   display: flex;
   justify-content: center;
   align-items: flex-end;
+  
 }
 
 .box-nav-promo {
@@ -384,7 +386,7 @@ header {
 
 main {
   display: grid;
-  grid-template-columns: repeat(27, 1fr);
+  grid-template-columns: repeat(27, 100%);
   grid-auto-rows: auto;
   grid-template-areas:
     "nav-fix"
@@ -400,14 +402,27 @@ main {
     "programming"
     "rug"
     "how-you-want"
-    "scroll-img"
-    "girl-in-red";
+    "container-scroll-img"
+    "girl-in-red"
+    "integration"
+    "container-img-run-guys"
+    "review"
+    "container-phones-img"
+    "celeprate-the-milestone"
+    "container-friends-on-the-top"
+    "subscripe"
+    "container-push-up-img"
+    "faq"
+    "hosted"
+    "listen-music"
+    "the-last-card-before-footer";
 }
 
 #container-img-friends {
   grid-area: container-img-friends;
  display: flex;
  justify-content: center;
+ 
 }
 
 img[src="assets/image/friends-ntc.jpg"] {
@@ -574,9 +589,11 @@ img[src="assets/image/friends-ntc.jpg"] {
   display: flex;
   justify-content: center;
   margin-top: 100px;
-  margin-right: 185px;
+  
 }
-
+#programming article{
+  margin-right: 200px;
+}
 #rug {
   grid-area: rug;
   display: flex;
@@ -598,34 +615,53 @@ img[src="assets/image/friends-ntc.jpg"] {
 #how-you-want div {
   margin-right: 280px;
 }
+#container-scroll-img{
+  grid-area:container-scroll-img;
 
+}
+.button-left-and-right{
+  display: flex;
+  justify-content: flex-end;
+  margin-right:50px;
+  gap:10px;
+
+}
+.button-left-and-right button{
+ padding:15px 2px;
+ border-radius: 100px;
+  }
+
+  .button-left-and-right button:hover{
+    background-color: #d1d1d1;
+    transition: 0.5s;
+  }
+.button-left-and-right button a{
+  border-radius:100px;
+  padding:15px 20px;
+}
 #scroll-img {
   grid-area: scroll-img;
-  margin-top: 100px;
+
   display: flex;
-  overflow-x: scroll;
+  overflow-x: auto;
  
   
 }
 #scroll-img::-webkit-scrollbar-track {
-  width: 5px;
-
-  
+-webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
   border-radius: 10px;
+  background-color: #F5F5F5;
 }
 
 #scroll-img::-webkit-scrollbar {
-  width: 4px;
-  background-color: red;
+  width:12px;
+  background-color: #F5F5F5;
 }
-#scroll-img::-webkit-resizer{
- width:10px;
-}
+
 #scroll-img::-webkit-scrollbar-thumb {
   border-radius: 10px;
-
-   background-color: violet;
-  
+  -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, .3);
+  background-color: rgb(151, 149, 149);
 }
 #scroll-img ul{
 
@@ -658,7 +694,193 @@ img[src="assets/image/friends-ntc.jpg"] {
     margin-top:100px;
 
 }
-
+#girl-in-red picture{
+  width: 80%;
+}
 #girl-in-red picture img{
      max-width: 100%;
 }
+#integration{
+  grid-area:integration;
+  display: flex;
+  justify-content: center;
+  margin-top: 100px;;
+}
+
+#integration div{
+  margin-right:250px;
+}
+
+#container-img-run-guys{
+  grid-area: container-img-run-guys;
+  margin-top: 100px;
+  display: flex;
+  justify-content: center;
+  
+
+}
+#container-img-run-guys picture{
+  height: 900px;
+}
+#container-img-run-guys picture img{
+  max-width: 100%;
+  
+}
+
+#review{
+  grid-area:review;
+  display: flex;
+  justify-content: center;
+  
+}
+
+#review article {
+  margin-right:310px;
+}
+
+#container-phones-img{
+  grid-area: container-phones-img;
+  display: flex;
+  justify-content: center;
+  margin-top: 100px;
+  display: none;
+}
+
+#container-phones-img picture img{
+  max-width: 100%;
+}
+
+#celeprate-the-milestone{
+  grid-area: celeprate-the-milestone;
+  display: flex;
+  justify-content: center;
+  
+  margin-top: 100px;
+
+}
+#celeprate-the-milestone article{
+  margin-right:350px;
+}
+#container-friends-on-the-top{
+  grid-area: container-friends-on-the-top;
+  display: flex;
+  justify-content:center;
+  margin-top: 100px;
+ 
+}
+#container-friends-on-the-top picture{
+  margin-right: 100px;
+}
+#container-friends-on-the-top picture img{
+  max-width: 100%;
+}
+#subscripe{
+  grid-area: subscripe;
+  display: flex;
+  justify-content: center;
+  margin-top: 100px;
+  
+}
+
+#subscripe article{
+  margin-right: 350px;
+}
+
+#subscripe article button {
+  border-radius: 30px;
+  padding: 9px 30px;
+  background-color: black;
+  color: white;
+  font-size: 1rem;
+}
+#subscripe article button:hover {
+
+  background-color: #2a2a2a;
+  cursor: pointer;
+}
+
+#container-push-up-img{
+  grid-area:container-push-up-img;
+  display: flex;
+  justify-content: center;
+  margin-top: 100px;
+  
+}
+#container-push-up-img picture{
+  margin-right: 100px;
+  
+}
+#container-push-up-img picture img{
+width: 100%;
+}
+
+#faq{
+  grid-area: faq;
+  display: flex;
+  justify-content: center;
+  margin-top: 100px;
+ 
+}
+
+#faq article{
+  margin-right: 350px;
+}
+
+#hosted{
+  grid-area: hosted;
+  display: flex;
+  justify-content: center;
+  margin-top: 100px;
+  
+}
+
+#hosted picture{
+  margin-right: 100px;
+}
+
+#hosted picture img{
+  max-width: 100%;
+}
+
+#listen-music{
+  grid-area:listen-music;
+  display: flex;
+  justify-content: center;
+  margin-top: 100px;
+  
+}
+
+#listen-music article{
+ 
+  margin-right: 350px;
+}
+#listen-music article div button{
+  border-radius: 30px;
+  padding: 9px 30px;
+  background-color: black;
+  color: white;
+  font-size: 1rem;
+}
+#listen-music article div button:hover{
+  background-color: #2a2a2a;
+  cursor: pointer;
+}
+#the-last-card-before-footer{
+grid-area: the-last-card-before-footer;
+  display: flex;
+  flex-direction: column;
+  margin-top: 100px;
+  margin-left: 50px;
+  
+}
+
+.container-card-before-footer{
+  display: flex;
+  gap:5px;
+  
+ 
+}
+.container-card-before-footer div picture img{
+  width: 100%;
+}
+

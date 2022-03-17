@@ -884,3 +884,84 @@ grid-area: the-last-card-before-footer;
   width: 100%;
 }
 
+footer{
+  
+  display: flex;
+  justify-content: center;
+  background-color: #111;
+  color:white;
+}
+
+#container-footer{
+  display: flex;
+  flex-direction: column;
+}
+
+#container-footer section{
+display: flex;
+ margin-top: 50px;
+ gap: 100px;
+ 
+ 
+}
+
+#container-footer ul{
+list-style: none;
+padding: 0%;
+display: flex;
+flex-direction: column;
+gap: 10px;
+}
+
+#container-footer ul  li  a {
+  color:gray;
+  font-size: smaller;
+}
+#container-footer ul li a:hover{
+  color:white;
+  transition: 1s;
+}
+.first-child-of-anchor{
+color:white!important;
+}
+
+.gift-card ul li a{
+  color: white!important;
+  
+}
+#box-bottom{
+  margin-bottom: 20px;
+  height: 50px;
+  display: flex;
+  justify-content: space-between;
+  
+}
+#box-bottom div{
+  display: inline-flex;
+  gap: 50px;
+}
+
+#box-bottom div p{
+  font-size: xx-small;
+  align-self: flex-end;
+  margin-bottom: 0%;
+}
+
+#the-last-of-footer{
+  margin: 0%;
+ flex-direction: row!important;
+ flex-wrap: wrap!important;
+ width: 90%;
+ justify-content: flex-end;
+
+}
+#the-last-of-footer li a{
+font-size: xx-small !important;
+}
+
+.container-ifont > ul{
+  flex-direction: row!important;
+
+  
+}
+

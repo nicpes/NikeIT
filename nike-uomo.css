@@ -779,9 +779,13 @@ nav > div {
 
 /* Nineth section */
 
+#last-cont-main {
+    display: flex;
+    justify-content: center;
+}
+
 .nav-sect {
-    width: 100%;
-    position: static;
+    width: fit-content;
     max-height: 192px;
     display: flex;
     justify-content: center;
@@ -789,6 +793,30 @@ nav > div {
     box-sizing: border-box;
     padding: 0;
     gap: 0 45px;
+    margin-bottom: 50px;
+    transition: .1s;
+    -webkit-transition: .1s;
+    -moz-transition: .1s;
+    -ms-transition: .1s;
+    -o-transition: .1s;
+}
+
+.nav-sect:hover {
+    overflow: unset;
+    max-height: 500px;
+    transition: .1s;
+    -webkit-transition: .1s;
+    -moz-transition: .1s;
+    -ms-transition: .1s;
+    -o-transition: .1s;
+}
+
+
+
+.nav-sect:hover a{
+    overflow: unset;
+    text-overflow: unset;
+    white-space: normal;
 }
 
 .nav-sect ul {
@@ -796,18 +824,208 @@ nav > div {
     width: 184px;
     box-sizing: border-box;
     padding: 0;
+    list-style-type: none;
+    display: flex;
+    flex-direction: column;
+    gap: 15px 0;
 }
 
 .nav-sect ul li {
-   
+    list-style-type: none;
+}
+
+.nav-sect ul li:first-child {
+    margin-bottom: 20px;
+    white-space: nowrap;
+    overflow: clip;
+    text-overflow: ellipsis;
+    display: inline-block;
+}
+
+.nav-sect ul li:nth-child(6),
+.nav-sect ul li:nth-child(7),
+.nav-sect ul li:nth-child(8),
+.nav-sect ul li:nth-child(9),
+.nav-sect ul li:nth-child(10),
+.nav-sect ul li:nth-child(11),
+.nav-sect ul li:nth-child(12),
+.nav-sect ul li:nth-child(13) {
+    display: none;
+}
+
+.nav-sect:hover ul li:nth-child(6),
+.nav-sect ul li:nth-child(7),
+.nav-sect ul li:nth-child(8),
+.nav-sect ul li:nth-child(9),
+.nav-sect ul li:nth-child(10),
+.nav-sect ul li:nth-child(11),
+.nav-sect ul li:nth-child(12),
+.nav-sect ul li:nth-child(13) {
+    display: unset;
 }
 
 .nav-sect ul li a {
     font-size: inherit;
     white-space: nowrap;
-    width: 10px;
-    overflow: visible;
+    overflow: hidden;
     text-overflow: ellipsis;
     display: inline-block;
+    width: 184px;
+    color: #757575;
+    font-weight: 400;
+}
+.nav-sect> ul > li > a:hover {
+    color: #111;
+    transition: .1s ease-in-out;
+    -webkit-transition: .1s ease-in-out;
+    -moz-transition: .1s ease-in-out;
+    -ms-transition: .1s ease-in-out;
+    -o-transition: .1s ease-in-out;
 }
 
+/* Footer */
+
+footer {
+    display: flex;
+    justify-content: center;
+    background: #111;
+}
+
+.cont-foot {
+    display: flex;
+    flex-direction: column;
+    padding: 36px;
+}
+
+.cont-foot a,
+.cont-foot p {
+    color: #7e7e7e;
+}
+
+.box-foot {
+    display: flex;
+    gap: 0 200px;
+    flex-grow: 1;
+}
+
+.list-foot {
+    display: flex;
+    gap: 0 100px;
+}
+
+.list-foot ul {
+    list-style-type: none;
+    display: flex;
+    flex-direction: column;
+    gap: 15px 0;
+    padding: 0;
+    margin: 0;
+}
+
+.list-foot a {
+    font-size: 12px;
+}
+
+.list-foot a:hover {
+    color: #fff;
+}
+
+
+.list-foot ul:first-child a {
+    color: #fff;
+    font-size: 14px;
+    font-weight: 400;
+    font-family: Nike;
+}
+
+.list-foot ul li:first-child a {
+    color: #fff;
+    font-size: 14px;
+    font-weight: 400;
+    font-family: Nike;
+}
+
+
+.img-foot{
+    display: flex;
+    gap: 0 15px;
+}
+
+.img-foot img {
+    width: 30px;
+    height: 30px;
+}
+
+.box-2-foot {
+    display: flex;
+    justify-content: right;
+    margin-top: 50px;
+    margin-bottom: 15px;
+    gap: 0 20px;
+    position: relative;
+}
+
+.box-2-foot > a {
+    font-size: 10px;
+}
+
+.box-2-foot a:hover {
+    color: #fff;
+}
+
+#show-foot:hover .foot-hide {
+    display: flex;
+}
+
+.foot-hide{
+    display: none;
+    width: 700px;
+    position: absolute;
+    justify-content: space-between;
+    align-items: flex-start;
+    background: #111;
+    border: 1px solid #fff;
+    bottom: 0;
+}
+
+.foot-hide ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+
+
+.box-3-foot {
+    display: flex;
+    justify-content: space-between;
+}
+
+.box-3-foot a {
+    font-size: 10px;
+}
+
+.box-3-foot a:hover {
+    color: #fff;
+}
+
+.box-copy {
+    display: flex;
+    width: fit-content;
+    align-items: baseline;
+    gap: 0 15px;
+}
+
+.box-copy img {
+    width: 20px;
+}
+
+.box-copy a {
+    color: #fff;
+}
+
+.box-copy p {
+    margin: 0;
+    margin-left: 5px;
+    font-size: 10px;
+}

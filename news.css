@@ -12,24 +12,7 @@
     color: black;
 }
 
-.category{
-    width: fit-content;
-    color: black;
-    font-family: "NikeTG";
-    margin-top: 20px;
-    border-bottom: 3px solid black;
-    border-width: thick;
-}
 
-.sport-science{
-    text-transform: uppercase;
-    width: fit-content;
-    color: black;
-    font-family: "NikeTG";
-    margin-top: 20px;
-    border-bottom: 3px solid black;
-    border-width: thick;
-}
 /* HEADER */
 
 .navbar{
@@ -52,6 +35,7 @@
    
 }
 .nike-news{
+    font-size: 22px;
     text-transform:uppercase;
     text-decoration:none;
     border-bottom: 4px solid black;
@@ -59,27 +43,55 @@
     font-family: 'NikeTG';
     font-weight: bolder; 
 }
+.subtitle{
+    color: #8a8a8a;
+    font-size: 13px;
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+}
 
 
 .headertools{
+    margin-top: -50px;
     display: flex;
     justify-content: center;
     align-items: center;
 }
 .hamburger{
     margin-right: 20px;
-    width: 20px;
-    height: 20px;
+    width: 26px;
+    height: 24px;
+    transition: 0.5s;
 }
 .search{
     margin-right: 20px;
     width: 20px;
-    height: 20px;
+    height: 23px;
 }
 
 
 
 /*  MAIN  */
+
+.category{
+    width: fit-content;
+    color: black;
+    font-family: "NikeTG";
+    margin-top: 20px;
+    border-bottom: 3px solid black;
+    border-width: thick;
+}
+
+.sport-science{
+    text-transform: uppercase;
+    width: fit-content;
+    color: black;
+    font-family: "NikeTG";
+    margin-top: 20px;
+    border-bottom: 3px solid black;
+    border-width: thick;
+}
+
 .maincontent{
     display: flex;
     flex-direction: column;
@@ -175,3 +187,34 @@
     color: #8a8a8a;
 }
 
+@media only screen and (max-width: 600px) {
+  body {
+    display: flex;
+      flex-direction: column;
+  }
+   
+    .firstdiv{
+        gap: 20px;
+        display: flex;
+        flex-direction: column;
+    }
+    
+  .lebron-img{
+      width: 100%;
+    overflow: hidden;
+}
+    .footer{
+        gap: 5px;
+        flex-direction: column;
+        text-align: center;
+        margin-left: -10px;
+    }
+    .foot-links{
+        gap: 5px;
+        display: flex;
+        flex-direction: column;
+        margin-left: -8px;
+        padding-bottom: 30px;
+    }
+    
+}

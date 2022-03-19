@@ -6,8 +6,22 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
     <title>App Nike Run Club. Nike IT</title>
+    <script src="script.js"></script>
 </head>
 <body>
+<div class="signin" id="signin">
+    <div class="signin-logo"></div>
+    <svg fill="#111" height="30px" width="30px" viewBox="0 0 24 24" onclick="showHideSignin();"><path d="M15.04 12L24 2.96 21.04 0 12 8.96 3.04 0 0 2.96 9.04 12 0 20.96 3.04 24 12 14.96 21.04 24 24 20.96z"></path></svg>
+    <div class="signin-header">IL TUO ACCOUNT PER ACCEDERE AL MONDO NIKE</div>
+    <input id="signin-email" type="email" placeholder="Indirizzo e-mail" value="" name="signin-email">
+    <input id="signin-password" type="password" placeholder="Password" value="" name="signin-password">
+    <div class="signin-utils"><div class="signin-connected"><input id="signin-checkbox" type="checkbox" name="signin-checkbox" checked="checked">
+    <label for="signin-checkbox" class="signin-checkbox">Rimani collegato</label></div>
+    <div class="signin-forgot"><a id="signin-forgot" href="#">Hai dimenticato la password?</a></div></div>
+    <p class="signin-terms">Effettuando l'accesso, accetti la <a href="#">Politica sulla privacy</a> e i <a href="#">Termini di utilizzo</a> di Nike.</p>
+    <input id="signin-button" type="button" value="ACCEDI">
+    <p class="signin-register">Non sei un member? <a href="#">Unisciti a noi</a></p>
+</div>
 <header>
     <nav>
         <div class="nav-top">
@@ -34,7 +48,7 @@
                         </ul>
                     </div> 
                     <li><a href="#">Unisciti a noi</a></li> |
-                    <li><a href="#">Accedi</a></li> 
+                    <li><a href="#" onclick="showHideSignin();">Accedi</a></li> 
                 </ul>
             </div>  
         </div>

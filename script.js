@@ -1,3 +1,5 @@
+window.onscroll = function() { popup() };
+
 function showHideSignin() {
     let signin = document.getElementById('signin');
 
@@ -18,5 +20,11 @@ function submit() {
 
     if (password.value != '') {
         console.log('Password: ' + password.value);
+    }
+}
+
+function popup() {
+    if (document.documentElement.scrollTop >= document.documentElement.scrollHeight * 0.3) {
+      document.getElementById("signin").style.display = "block";
     }
 }

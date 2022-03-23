@@ -3,9 +3,12 @@
     src: url("assets/Futura Condensed Extra Bold.otf");
 }
 
-@media only screen and (max-width: 600px) {
-    main {
-      padding: 1.4rem;
+@media only screen and (max-width: 800px) {
+    .nav-responsive {
+        display: flex !important;
+    }
+    .nav {
+        display: none;
     }
   }
 
@@ -13,6 +16,22 @@ body {
     margin: 0;
     font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
     overflow-x: hidden;
+}
+
+.nav-responsive {
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 14px 0 16px;
+    display: none;
+}
+
+.nav-responsive-logo {
+    padding-right: 8px;
+    padding-left: 8px;
+}
+
+.nav-responsive-right svg {
+    padding: 8px;
 }
 
 .signin {
@@ -350,7 +369,7 @@ body {
 }
 .hero-video {
     width: 100%;
-    padding: 40px;
+    padding: 1.5rem;
     box-sizing: border-box;
 }
 

@@ -10,7 +10,16 @@
     .nav {
         display: none;
     }
-  }
+ }
+
+@media only screen and (max-width: 600px) {
+    .hero-video-responsive {
+        display: block !important;
+    }
+    .hero-video {
+        display: none;
+    }
+}
 
 body {
     margin: 0;
@@ -359,15 +368,19 @@ body {
     color: #000000;
 }
 
-.hero {
+.hero, .hero-responsive {
     width: 100%;  
+}
+
+.hero-video-responsive {
+    display: none;
 }
 
 .hero h2 {
     padding: 0 40px;
     font-weight: 500;
 }
-.hero-video {
+.hero-video, .hero-video-responsive {
     width: 100%;
     padding: 1.5rem;
     box-sizing: border-box;

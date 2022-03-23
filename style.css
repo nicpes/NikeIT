@@ -3,6 +3,12 @@
     src: url("assets/Futura Condensed Extra Bold.otf");
 }
 
+@media only screen and (max-width: 600px) {
+    main {
+      padding: 1.4rem;
+    }
+  }
+
 body {
     margin: 0;
     font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
@@ -350,6 +356,7 @@ body {
 
 .hero-description {
     text-align: center;
+    padding: 0 1.5rem;
 }
 
 .hero-description h3 {
@@ -390,7 +397,8 @@ a:hover {
 }
 
 .img-001 {
-    width: 945px;
+    max-width: 100%;
+    height: 100%;
     display: block;
     margin: 0px auto;
     margin-top: 80px;
@@ -398,7 +406,8 @@ a:hover {
 }
 
 .img-002 {
-    width: 1423px;
+    max-width: 100%;
+    height: 100%;
     display: block;
     margin: 0px auto;
     margin-top: 80px;
@@ -406,22 +415,26 @@ a:hover {
 }
 
 main h4, main p, main ul {
-    width: 945px;
+    max-width: 945px;
     display: block;
     margin: 0px auto;
 }
 
 main h4 {
-    font-size: 34px;
+    font-size: 2.125rem;
     font-weight: 500;
     color: #111111;
-    margin-bottom: 30px;
+    margin-bottom: 1.875rem;
+}
+
+main {
+    padding: 0 1.5rem;
 }
 
 main p, main ul li {
-    font-size: 20px;
+    font-size: 1.25rem;
     color: #111111;
-    margin-bottom: 24px;
+    margin-bottom: 1.5rem;
 }
 
 main a.button {
@@ -441,12 +454,10 @@ main h2 {
 }
 
 .carousel {
-    padding: 20px;
     overflow-x: scroll;
 }
 
 .slider {
-    padding: 40px;
     margin-bottom: 20px;
 }
 

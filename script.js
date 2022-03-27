@@ -10,6 +10,23 @@ function showHideSignin() {
     }
 }
 
+function showHideModal() {
+    let modal = document.getElementById('modal');
+
+    if(modal.style.display == "block") {
+        modal.style.display = "none";
+    } else {
+        modal.style.display = "block";
+    }
+
+}
+
+let buttons = document.getElementsByClassName('button');
+
+for (let i = 0; i < buttons.length; i++) {
+    buttons[i].addEventListener('click', showHideModal);
+}
+
 function submit() {
     let email = document.getElementById('signin-email');
     let password = document.getElementById('signin-password');

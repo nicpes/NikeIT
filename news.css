@@ -102,6 +102,10 @@ a {
   opacity: 0;
   transition: all 2s ease;
 }
+.newssearch{
+  margin-top: -20px;
+  margin-left: -20px
+}
 
 .top-searchmenu {
   position: fixed;
@@ -159,7 +163,7 @@ a {
   border: none;
 }
 #searchbar-svg {
-  fill: red;
+  fill: gray;
   width: 100px;
   height: 30px;
 }
@@ -340,9 +344,6 @@ a {
   color: #8a8a8a;
 }
 
-a:hover {
-  color: red;
-}
 
 @media only screen and (max-width: 600px) {
   .navbar {

@@ -13,12 +13,6 @@ body {
     align-items: center;
 }
 
-#li-menu-aiuto {
-    height: 29px;
-    display: flex;
-    align-items: center;
-}
-
 #ul-menu-aiuto {
     display: flex;
     list-style-type: none;
@@ -26,7 +20,12 @@ body {
     padding: 0;
     margin: 0;
     align-items: center;
+}
 
+#li-menu-aiuto {
+    height: 29px;
+    display: flex;
+    align-items: center;
 }
 
 #li-menu-aiuto:hover > #sub-ul-menu-aiuto {
@@ -66,7 +65,50 @@ body {
 
         /*seconda nav*/
 
-.nav2 {}
+.nav2 {
+    display: flex;
+}
+
+.div-sub3-nav2 {
+    display: flex;
+    align-items: center;
+}
+
+.ul-master-nav2 {
+    display: flex;
+    list-style-type: none;
+    gap: 0 10px;
+    padding: 0;
+    margin: 0;
+    align-items: center;
+    border: 2px solid red;
+}
+
+.li-master-ul-nav2 {
+    height: 29px;
+    display: flex;
+    align-items: center;
+    border: 2px solid red;
+}
+
+.li-master-ul-nav2:hover > .sub-ul-master-ul-nav2 {
+    display: flex;
+    flex-direction: column;
+    border: 2px solid red;
+    align-items: center;
+    gap: 15px 25px;
+
+}
+
+.sub-ul-master-ul-nav2 {
+    width: 100%;
+    position: absolute;
+    right: 1px;
+    top: 90px;
+    display: none;
+    list-style-type: none;
+    border: 2px solid red;
+}
 
 /* da qui partono i blocchi del main*/
 
@@ -415,8 +457,23 @@ footer {
     height: 400px;
     width: 100%;
     background-color: #111;
-    margin-top: 35px;
 }
+
+        /*footer con espansione*/
+
+.top-footer {
+    background-color: olive;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.ul-top-footer {
+    display: flex;
+    list-style-type: none;
+}
+
+        /*footer fisso (nero)*/
 
 .footer {
     height: 100%;

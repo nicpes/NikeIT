@@ -470,33 +470,34 @@ img[src="assets/image/friends-ntc.jpg"] {
   grid-area: scan-this-code;
   display: flex;
   justify-content: center;
+ 
 }
 
 .box-img-scan-this-code {
   margin-right: 70px;
   margin-top: 100px;
   width: 990px;
-  height: 750px;
+  height: 100%;
 }
 
 .box-img-scan-this-code img {
   max-width: 100%;
-  max-height: 100%;
+  width: 100%;
 }
 
 #training-routine {
   grid-area: training-routine;
   display: flex;
   justify-content: center;
-  margin-top: 100px;
+ 
 }
 
 .box-text-routine {
   width: 850px;
   display: inline-flex;
-  flex-flow: column;
+ flex-direction: column;
   margin-right: 200px;
-  height: 480px;
+  
 }
 
 .box-text-routine span {
@@ -521,6 +522,7 @@ img[src="assets/image/friends-ntc.jpg"] {
   height: 700px;
   justify-content: center;
   margin-top: 100px;
+  
 }
 
 #container-weight img {
@@ -964,4 +966,20 @@ font-size: xx-small !important;
 
   
 }
+/*mediaquery*/
+@media only screen and (max-width: 1420px){
+  .collection{
+    display: none;
+  }
+}
+@media only screen and (max-width:1032px){
+  .outlet{
+    display:none;
+  }
+}
 
+@media only screen and (max-width:950px){
+  .kids{
+    display: none;
+  }
+}

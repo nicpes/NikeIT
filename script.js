@@ -20,7 +20,8 @@ const navmenu = document.getElementById("navmenu");
 /* SHOW MENU' */
 
 function showNavMenu() {
-  document.getElementById("navmenu").style.display = "flex";
+  document.getElementById("navmenu").style.opacity = "1";
+  document.getElementById("navmenu").style.visibility = "visible"
 }
 document.getElementById("ham-svg").addEventListener("click", showNavMenu);
 
@@ -41,6 +42,7 @@ function showSearchMenu() {
   document.getElementById("searchmenu").style.display = "flex";
   document.getElementById("ham-svg").style.display = "none";
   document.getElementById("searchmenu").style.opacity = "1";
+  document.getElementById("searchmenu").style.visibility = "visible"
   
 }
 document.getElementById("search-svg").addEventListener("click", showSearchMenu);

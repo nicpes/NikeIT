@@ -1,0 +1,985 @@
+body {
+  margin: 0%;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  color: #111;
+  background-color: white;
+}
+h4 {
+  color: black;
+  font-size: medium;
+  margin-bottom: 14px;
+  font-size: 16px;
+  font-weight: 500;
+}
+h2 {
+  font-size: 30px;
+  font-weight: lighter;
+}
+a {
+  text-decoration: none;
+  color: black;
+}
+
+header {
+  background-color: #f5f5f5;
+}
+.box-nav {
+  height: 5vh;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: auto 70px;
+}
+
+.box-img-nav {
+  display: flex;
+  gap: 30px;
+}
+
+.dropdown-help {
+  display: inline-flex;
+  gap: 10px;
+}
+
+.help {
+  display: inline-flex;
+}
+
+.content-help {
+  display: none;
+  min-width: 100px;
+  z-index: 1;
+}
+.content-help a {
+  display: block;
+}
+.help:hover {
+  color: gray;
+}
+
+#help-hover:hover .content-help {
+  background-color: white;
+  position: absolute;
+  display: flex;
+  justify-content: flex-start;
+  flex-direction: column;
+  gap: 20px;
+  right: 100px;
+  padding: 16px 24px 24px 24px;
+  border-radius: 10%;
+}
+
+.content-help a {
+  color: gray;
+  font-size: small;
+}
+
+.content-help :first-child {
+  color: black;
+  font-size: large;
+}
+
+.content-help a:hover {
+  color: black;
+}
+
+.box-union a:hover {
+  color: gray;
+}
+
+.box-login a:hover {
+  color: gray;
+}
+
+#nav-fix {
+  grid-area: nav-fix;
+  background-color: white;
+  position: sticky;
+  position: -webkit-sticky;
+  width: 100%;
+  display: flex;
+  top: 0;
+  height: 60px;
+  justify-content: space-between;
+}
+
+.box-img-nike {
+  display: inline-flex;
+  margin-left: 70px;
+}
+
+#nav-fix ul {
+  display: flex;
+  list-style: none;
+  padding: 0px;
+  margin-left: 200px;
+  align-items: center;
+}
+
+#nav-fix ul li a {
+  position: relative;
+  display: block;
+  padding: 20px 10px;
+  transition: 0.5s;
+}
+/* for the bottom hover line */
+/* for the undercover */
+#nav-fix ul li .undercover::before {
+  content: "";
+  position: absolute;
+  top: 0px;
+  bottom: 0px;
+
+  border-bottom: 3px solid black;
+  width: 80%;
+  height: 100%;
+  transform: scaley(1);
+  opacity: 0;
+}
+
+#nav-fix ul li .undercover:hover::before {
+  transform: scaley(1);
+  border-bottom: 3px solid;
+  opacity: 1;
+  height: 90%;
+}
+
+.right-label {
+  display: flex;
+  margin-right: 70px;
+  gap: 20px;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.right-label form {
+  display: flex;
+  border: 0px;
+  background-color: #f5f5f5;
+  width: 160px;
+  height: 40px;
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+  border-bottom-right-radius: 20px;
+  border-bottom-left-radius: 20px;
+  align-items: center;
+}
+.right-label form:hover {
+  background-color: #d1d1d1;
+}
+
+.right-label form input {
+  width: 100%;
+  height: 100%;
+  border-style: none;
+  background-color: transparent;
+  outline: none;
+  font-size: 16px;
+}
+
+.right-label form button {
+  background-color: transparent;
+  border-radius: 50px;
+  border-style: none;
+}
+
+.right-label form button:hover {
+  background-color: #d1d1d1;
+}
+
+.heart-bag {
+  position: relative;
+  display: flex;
+
+  gap: 10px;
+}
+
+.heart-bag a {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 50px;
+  height: 50px;
+}
+
+.heart-bag a:hover {
+  border-radius: 50%;
+  background-color: #d1d1d1;
+}
+
+/* for dropdown news */
+
+.dropdown-news {
+  display: none;
+  position: absolute;
+  width: 100vw;
+  right: 1px;
+  justify-content: center;
+  gap: 30px;
+  height: 300px;
+  background-color: white;
+}
+
+.news .dropdown-news #list-news a {
+  color: gray;
+  padding: 5px;
+  font-size: small;
+}
+.news .dropdown-news #list-news a:hover {
+  color: black;
+}
+.news:hover .dropdown-news {
+  display: flex;
+}
+/* for dropdown man */
+.dropdown-man {
+  display: none;
+  position: absolute;
+  width: 100%;
+  height: 600px;
+  gap: 30px;
+}
+
+.man:hover .dropdown-man {
+  display: flex;
+  right: 1px;
+  justify-content: center;
+  background-color: white;
+}
+
+.dropdown-man #list-man a {
+  color: gray;
+  padding: 6px;
+  font-size: small;
+}
+
+.dropdown-man #list-man a:hover {
+  color: black;
+}
+
+/* for dropdown woman */
+
+.dropdown-woman {
+  display: none;
+  position: absolute;
+  width: 100vw;
+}
+
+.woman:hover .dropdown-woman {
+  display: flex;
+  right: 1px;
+  justify-content: center;
+  gap: 30px;
+  background-color: white;
+}
+
+.dropdown-woman #list-woman a {
+  padding: 6px;
+  color: gray;
+  font-size: small;
+}
+
+.dropdown-woman #list-woman a:hover {
+  color: black;
+}
+
+/* dropdown for kids */
+
+.dropdown-kids {
+  display: none;
+  width: 100vw;
+}
+
+.kids:hover .dropdown-kids {
+  display: flex;
+  position: absolute;
+  justify-content: center;
+  right: 1px;
+  gap: 30px;
+  background-color: white;
+}
+
+.dropdown-kids #list-kids a {
+  padding: 6px;
+  color: gray;
+  font-size: small;
+}
+
+.dropdown-kids #list-kids a:hover {
+  color: black;
+}
+
+/* dropdown for outlet */
+
+.dropdown-outlet {
+  display: none;
+  width: 100vw;
+}
+
+.outlet:hover .dropdown-outlet {
+  display: flex;
+  position: absolute;
+  justify-content: center;
+  right: 1px;
+  gap: 30px;
+  background-color: white;
+}
+
+.dropdown-outlet #list-outlet a {
+  padding: 6px;
+  color: gray;
+  font-size: small;
+}
+
+.dropdown-outlet #list-outlet a:hover {
+  color: gray;
+}
+
+/* for dropdown collection */
+
+.dropdown-collection {
+  display: none;
+  width: 100vw;
+}
+
+.collection:hover .dropdown-collection {
+  display: flex;
+  position: absolute;
+  justify-content: center;
+  gap: 40px;
+  right: 1px;
+  background-color: white;
+  border: none;
+}
+
+.dropdown-collection #list-collection a {
+  color: gray;
+  padding: 6px;
+  font-size: small;
+}
+
+.dropdown-collection #list-collection a:hover {
+  color: black;
+}
+
+/* for nav-promo */
+.nav-promo {
+  grid-area: nav-bar-promo;
+  background-color: #f5f5f5;
+  height: 5vh;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  
+}
+
+.box-nav-promo {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 5px;
+}
+
+#find-out-more {
+  font-size: small;
+}
+
+main {
+  display: grid;
+  grid-template-columns: repeat(27, 100%);
+  grid-auto-rows: auto;
+  grid-template-areas:
+    "nav-fix"
+    "nav-bar-promo"
+    "container-img-friends"
+    "nike-training"
+    "scan-this-code"
+    "training-routine"
+    "container-weights"
+    "why-choose"
+    "workout"
+    "sumba"
+    "programming"
+    "rug"
+    "how-you-want"
+    "container-scroll-img"
+    "girl-in-red"
+    "integration"
+    "container-img-run-guys"
+    "review"
+    "container-phones-img"
+    "celeprate-the-milestone"
+    "container-friends-on-the-top"
+    "subscripe"
+    "container-push-up-img"
+    "faq"
+    "hosted"
+    "listen-music"
+    "the-last-card-before-footer";
+}
+
+#container-img-friends {
+  grid-area: container-img-friends;
+ display: flex;
+ justify-content: center;
+ 
+}
+
+img[src="assets/image/friends-ntc.jpg"] {
+ flex: 1;
+ max-width: 100%;
+  
+}
+
+.nike-training {
+  grid-area: nike-training;
+  display: flex;
+  margin-right: 200px;
+  margin-top: 100px;
+  justify-content: center;
+}
+
+.box-training {
+  width: 850px;
+}
+
+.text-training {
+  font-weight: 500;
+  line-height: 28px;
+  font-size: 20px;
+}
+
+.container-btn-friends {
+  display: flex;
+  gap: 20px;
+}
+
+.container-btn-friends button {
+  border-radius: 30px;
+  padding: 9px 30px;
+  background-color: black;
+  color: white;
+  font-size: 1rem;
+}
+.container-btn-friends button:hover {
+  background-color: #2a2a2a;
+  cursor: pointer;
+}
+
+#scan-this-code {
+  grid-area: scan-this-code;
+  display: flex;
+  justify-content: center;
+ 
+}
+
+.box-img-scan-this-code {
+  margin-right: 70px;
+  margin-top: 100px;
+  width: 990px;
+  height: 100%;
+}
+
+.box-img-scan-this-code img {
+  max-width: 100%;
+  width: 100%;
+}
+
+#training-routine {
+  grid-area: training-routine;
+  display: flex;
+  justify-content: center;
+ 
+}
+
+.box-text-routine {
+  width: 850px;
+  display: inline-flex;
+ flex-direction: column;
+  margin-right: 200px;
+  
+}
+
+.box-text-routine span {
+  font-size: 23px;
+  color: #111;
+}
+.last {
+  margin-top: 0px;
+}
+
+.text-training .for-text-hover {
+  border-bottom: 2px solid black;
+}
+
+.text-training .for-text-hover:hover {
+  color: gray;
+}
+
+#container-weight {
+  grid-area: container-weights;
+  display: flex;
+  height: 700px;
+  justify-content: center;
+  margin-top: 100px;
+  
+}
+
+#container-weight img {
+  height: 94%;
+  width: 95%;
+}
+#why-choose {
+  grid-area: why-choose;
+  display: flex;
+  justify-content: center;
+  margin-top: 100px;
+}
+
+#why-choose article {
+  margin-right: 240px;
+}
+
+#workout {
+  grid-area: workout;
+  display: flex;
+  justify-content: center;
+  margin-top: 100px;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  padding: 10px;
+}
+.card picture {
+  display: flex;
+  height: 500px;
+}
+
+.card picture img {
+  flex: 1;
+  max-width: 100%;
+  height: 100%;
+}
+
+.card h4 {
+  font-size: 20px;
+}
+
+#sumba {
+  grid-area: sumba;
+  display: flex;
+  justify-content: center;
+  margin-top: 100px;
+}
+
+#sumba picture {
+  display: flex;
+  height: 700px;
+  width: 1000px;
+  margin-right: 65px;
+}
+
+#sumba picture img {
+  max-width: 100%;
+  flex: 1;
+}
+
+#programming {
+  grid-area: programming;
+  display: flex;
+  justify-content: center;
+  margin-top: 100px;
+  
+}
+#programming article{
+  margin-right: 200px;
+}
+#rug {
+  grid-area: rug;
+  display: flex;
+  justify-content: center;
+  margin-top: 100px;
+  height: 700px;
+}
+
+#rug picture img {
+  max-width: 100%;
+}
+
+#how-you-want {
+  grid-area: how-you-want;
+  display: flex;
+  justify-content: center;
+  margin-top: 100px;
+}
+#how-you-want div {
+  margin-right: 280px;
+}
+#container-scroll-img{
+  grid-area:container-scroll-img;
+
+}
+.button-left-and-right{
+  display: flex;
+  justify-content: flex-end;
+  margin-right:50px;
+  gap:10px;
+
+}
+.button-left-and-right button{
+ padding:15px 2px;
+ border-radius: 100px;
+  }
+
+  .button-left-and-right button:hover{
+    background-color: #d1d1d1;
+    transition: 0.5s;
+  }
+.button-left-and-right button a{
+  border-radius:100px;
+  padding:15px 20px;
+}
+#scroll-img {
+  grid-area: scroll-img;
+
+  display: flex;
+  overflow-x: auto;
+ 
+  
+}
+#scroll-img::-webkit-scrollbar-track {
+-webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+  border-radius: 10px;
+  background-color: #F5F5F5;
+}
+
+#scroll-img::-webkit-scrollbar {
+  width:12px;
+  background-color: #F5F5F5;
+}
+
+#scroll-img::-webkit-scrollbar-thumb {
+  border-radius: 10px;
+  -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, .3);
+  background-color: rgb(151, 149, 149);
+}
+#scroll-img ul{
+
+    list-style: none;
+    display: inline-flex;
+    gap: 5px;
+}
+
+#scroll-img ul li{
+    display: flex;
+    flex: 0 0 calc(33%) ;
+
+}
+#scroll-img ul li a{
+    width: 100%;
+}
+#scroll-img ul li a h3{
+  margin-top: 50px;
+}
+
+
+#scroll-img ul li a picture img{
+    width: 100%;
+  
+}
+#girl-in-red{
+    grid-area:girl-in-red;
+    display: flex;
+    justify-content: center;
+    margin-top:100px;
+
+}
+#girl-in-red picture{
+  width: 80%;
+}
+#girl-in-red picture img{
+     max-width: 100%;
+}
+#integration{
+  grid-area:integration;
+  display: flex;
+  justify-content: center;
+  margin-top: 100px;;
+}
+
+#integration div{
+  margin-right:250px;
+}
+
+#container-img-run-guys{
+  grid-area: container-img-run-guys;
+  margin-top: 100px;
+  display: flex;
+  justify-content: center;
+  
+
+}
+#container-img-run-guys picture{
+  height: 900px;
+}
+#container-img-run-guys picture img{
+  max-width: 100%;
+  
+}
+
+#review{
+  grid-area:review;
+  display: flex;
+  justify-content: center;
+  
+}
+
+#review article {
+  margin-right:310px;
+}
+
+#container-phones-img{
+  grid-area: container-phones-img;
+  display: flex;
+  justify-content: center;
+  margin-top: 100px;
+  display: none;
+}
+
+#container-phones-img picture img{
+  max-width: 100%;
+}
+
+#celeprate-the-milestone{
+  grid-area: celeprate-the-milestone;
+  display: flex;
+  justify-content: center;
+  
+  margin-top: 100px;
+
+}
+#celeprate-the-milestone article{
+  margin-right:350px;
+}
+#container-friends-on-the-top{
+  grid-area: container-friends-on-the-top;
+  display: flex;
+  justify-content:center;
+  margin-top: 100px;
+ 
+}
+#container-friends-on-the-top picture{
+  margin-right: 100px;
+}
+#container-friends-on-the-top picture img{
+  max-width: 100%;
+}
+#subscripe{
+  grid-area: subscripe;
+  display: flex;
+  justify-content: center;
+  margin-top: 100px;
+  
+}
+
+#subscripe article{
+  margin-right: 350px;
+}
+
+#subscripe article button {
+  border-radius: 30px;
+  padding: 9px 30px;
+  background-color: black;
+  color: white;
+  font-size: 1rem;
+}
+#subscripe article button:hover {
+
+  background-color: #2a2a2a;
+  cursor: pointer;
+}
+
+#container-push-up-img{
+  grid-area:container-push-up-img;
+  display: flex;
+  justify-content: center;
+  margin-top: 100px;
+  
+}
+#container-push-up-img picture{
+  margin-right: 100px;
+  
+}
+#container-push-up-img picture img{
+width: 100%;
+}
+
+#faq{
+  grid-area: faq;
+  display: flex;
+  justify-content: center;
+  margin-top: 100px;
+ 
+}
+
+#faq article{
+  margin-right: 350px;
+}
+
+#hosted{
+  grid-area: hosted;
+  display: flex;
+  justify-content: center;
+  margin-top: 100px;
+  
+}
+
+#hosted picture{
+  margin-right: 100px;
+}
+
+#hosted picture img{
+  max-width: 100%;
+}
+
+#listen-music{
+  grid-area:listen-music;
+  display: flex;
+  justify-content: center;
+  margin-top: 100px;
+  
+}
+
+#listen-music article{
+ 
+  margin-right: 350px;
+}
+#listen-music article div button{
+  border-radius: 30px;
+  padding: 9px 30px;
+  background-color: black;
+  color: white;
+  font-size: 1rem;
+}
+#listen-music article div button:hover{
+  background-color: #2a2a2a;
+  cursor: pointer;
+}
+#the-last-card-before-footer{
+grid-area: the-last-card-before-footer;
+  display: flex;
+  flex-direction: column;
+  margin-top: 100px;
+  margin-left: 50px;
+  
+}
+
+.container-card-before-footer{
+  display: flex;
+  gap:5px;
+  
+ 
+}
+.container-card-before-footer div picture img{
+  width: 100%;
+}
+
+footer{
+  
+  display: flex;
+  justify-content: center;
+  background-color: #111;
+  color:white;
+}
+
+#container-footer{
+  display: flex;
+  flex-direction: column;
+}
+
+#container-footer section{
+display: flex;
+ margin-top: 50px;
+ gap: 100px;
+ 
+ 
+}
+
+#container-footer ul{
+list-style: none;
+padding: 0%;
+display: flex;
+flex-direction: column;
+gap: 10px;
+}
+
+#container-footer ul  li  a {
+  color:gray;
+  font-size: smaller;
+}
+#container-footer ul li a:hover{
+  color:white;
+  transition: 1s;
+}
+.first-child-of-anchor{
+color:white!important;
+}
+
+.gift-card ul li a{
+  color: white!important;
+  
+}
+#box-bottom{
+  margin-bottom: 20px;
+  height: 50px;
+  display: flex;
+  justify-content: space-between;
+  
+}
+#box-bottom div{
+  display: inline-flex;
+  gap: 50px;
+}
+
+#box-bottom div p{
+  font-size: xx-small;
+  align-self: flex-end;
+  margin-bottom: 0%;
+}
+
+#the-last-of-footer{
+  margin: 0%;
+ flex-direction: row!important;
+ flex-wrap: wrap!important;
+ width: 90%;
+ justify-content: flex-end;
+
+}
+#the-last-of-footer li a{
+font-size: xx-small !important;
+}
+
+.container-ifont > ul{
+  flex-direction: row!important;
+
+  
+}
+/*mediaquery*/
+@media only screen and (max-width: 1420px){
+  .collection{
+    display: none;
+  }
+}
+@media only screen and (max-width:1032px){
+  .outlet{
+    display:none;
+  }
+}
+
+@media only screen and (max-width:950px){
+  .kids{
+    display: none;
+  }
+}

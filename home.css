@@ -112,6 +112,22 @@ body {
     align-items: center;
     gap: 15px 25px;
 }
+.li-master-ul-nav2:hover > .container-ul-bambini {
+    display: flex;
+    align-items: center;
+    gap: 15px 25px;
+}
+.li-master-ul-nav2:hover > .container-ul-outlet {
+    display: flex;
+    align-items: center;
+    gap: 15px 25px;
+}
+.li-master-ul-nav2:hover > .container-ul-collections {
+    display: flex;
+    align-items: center;
+    gap: 15px 25px;
+}
+
 
 .sub-ul-master-ul-nav2 {
     width: 100%;
@@ -163,7 +179,45 @@ body {
     background: white;
     height: 200px;
 }
-
+.container-ul-bambini{
+    right: 0;
+    align-items:center ;
+    display: none;
+    justify-content:center;
+    position: absolute;
+    width: 100%;
+    margin-top: 340px;
+    z-index: 1;
+    background: white;
+    height: 300px;
+    margin-left: -120px;
+}
+.container-ul-outlet{
+    right: 0;
+    align-items:center ;
+    display: none;
+    justify-content:center;
+    position: absolute;
+    width: 100%;
+    margin-top: 340px;
+    z-index: 1;
+    background: white;
+    height: 300px;
+    margin-left: -120px;
+}
+.container-ul-collections{
+    right: 0;
+    align-items:center ;
+    display: none;
+    justify-content:center;
+    position: absolute;
+    width: 100%;
+    margin-top: 340px;
+    z-index: 1;
+    background: white;
+    height: 300px;
+    margin-left: -120px;
+}
 
 
 /* da qui partono i blocchi del main*/

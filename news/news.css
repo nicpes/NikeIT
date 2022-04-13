@@ -53,7 +53,8 @@ a {
 
 #centermenu{
   transition: all 1s ease;
-  margin-bottom: -50px
+  margin-bottom: -50px;
+  padding: 0;
 }
 
 
@@ -374,6 +375,10 @@ a {
   }
   .logo-navmenu{
     margin-left: 10px;
+  }
+
+  .navmenu-footer{
+    margin-left: -30px;
   }
 
   .nike-news {

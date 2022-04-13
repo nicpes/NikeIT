@@ -142,7 +142,7 @@ body {
    
 }
 .container-ul-uomo{
-    align-items:center ;
+    align-items:center;
     display: none;
     justify-content:center;
     position: absolute;
@@ -564,7 +564,7 @@ main {
         /*footer*/
 
 footer {
-    height: 400px;
+    height: 100%;
     width: 100%;
     background-color: #111;
 }
@@ -572,16 +572,53 @@ footer {
         /*footer con espansione*/
 
 .top-footer {
-    background-color: olive;
+    
+    background-color: white;
     display: flex;
     align-items: center;
     justify-content: center;
 }
+.top-footer a{
+    
+    font-size: 17px;
+    color: gray;
+}
+.top-footer a:hover{
+    color: black;
+}
+
 
 .ul-top-footer {
+    line-height: 35px;
     display: flex;
     list-style-type: none;
 }
+
+.ul-scarpe{
+    display: none;
+}
+.ul-top-footer:hover .ul-scarpe{
+    display: block;
+}
+.ul-clothes{
+    display: none;
+}
+.ul-top-footer:hover .ul-clothes{
+    display: block;
+}
+.ul-kids{
+    display: none;
+}
+.ul-top-footer:hover .ul-kids{
+    display: block;
+}
+.ul-evidenza{
+    display: none;
+}
+.ul-top-footer:hover .ul-evidenza{
+    display: block;
+}
+
 
         /*footer fisso (nero)*/
 

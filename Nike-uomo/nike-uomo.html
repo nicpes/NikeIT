@@ -439,15 +439,13 @@
         </div>
       </nav>
       <section class="slider">
-        <div class="cont-slider" id="slide1">
-          <p>
+        <div class="cont-slider">
+          <p id="slide1" class="slide1Trans">
             I member hanno diritto a spedizione e resi gratuiti entro 60 giorni.
             <a href="#">Unisciti a noi</a>
             <a href="#">Ulteriori informazioni</a>
           </p>
-        </div>
-        <div class="cont-slider" id="slide2">
-          <p>
+          <p id="slide2" class="slide2Trans">
             Gli studenti ricevono uno sconto del 10%
             <a href="#">Scopri di più</a>
           </p>
@@ -473,31 +471,33 @@
           <div class="login-title">
             <h2>IL TUO ACCOUNT PER ACCEDERE AL MONDO NIKE</h2>
           </div>
-          <div class="inp-email">
-            <input type="email" placeholder="Indirizzo e-mail" required />
-          </div>
-          <div class="inp-pass">
-            <input type="password" placeholder="Password" required />
-          </div>
-          <div class="login-pass">
-            <div>
-              <input type="checkbox" name="checkbox" />
-              <label for="checkbox">Rimani collegato</label>
+          <form action="#" id="formSignIn">
+            <div class="inp-email">
+              <input type="email" placeholder="Indirizzo e-mail" required id="emailSignIn"/>
             </div>
-            <div>
-              <a href="">Hai dimenticato la password ?</a>
+            <div class="inp-pass">
+              <input type="password" placeholder="Password" required id="passwordSignIn" />
             </div>
-          </div>
-          <div class="p-login-div">
-            <p>
-              Effettuando l'accesso, accetti la
-              <a href="">Politica sulla privacy</a> e i
-              <a href="">Termini di utilizzo</a> di Nike.
-            </p>
-          </div>
-          <div class="sign-in-button">
-            <input type="button" value="ACCEDI" />
-          </div>
+            <div class="login-pass">
+              <div>
+                <input type="checkbox" name="checkbox" />
+                <label for="checkbox">Rimani collegato</label>
+              </div>
+              <div>
+                <a href="">Hai dimenticato la password ?</a>
+              </div>
+            </div>
+            <div class="p-login-div">
+              <p>
+                Effettuando l'accesso, accetti la
+                <a href="">Politica sulla privacy</a> e i
+                <a href="">Termini di utilizzo</a> di Nike.
+              </p>
+            </div>
+            <div class="sign-in-button">
+              <input type="button" value="ACCEDI" id="signInBtn"/>
+            </div>
+          </form>
           <div class="p-member">
             <p>
               Non sei un member?
@@ -1057,7 +1057,7 @@
             </ul>
             <ul>
               <li><a href="">INFORMAZIONI SU NIKE</a></li>
-              <li><a href="">News</a></li>
+              <li><a href="../news/">News</a></li>
               <li><a href="">Lavora con noi</a></li>
               <li><a href="">Investitori</a></li>
               <li><a href="">Sostenibilità</a></li>

@@ -18,6 +18,14 @@ productContainers.forEach((item, i) => {
 setInterval(() => {
   let slide1 = document.getElementById(`slide1`);
   let slide2 = document.getElementById(`slide2`);
+
+  if (slide2.classList.contains(`view`)) {
+    slide2.classList.remove(`view`);
+    slide1.style.transform = `translateX(7vw)`;
+  } else {
+    slide2.classList.add(`view`);
+    slide1.style.transform = `translateX(-100vw)`;
+  }
 }, 5000);
 
 //sign-in
@@ -29,6 +37,17 @@ document.getElementById("btnLogin").addEventListener("click", (e) => {
 
 document.getElementById("btnLoginCloser").addEventListener("click", () => {
   document.getElementById("loginDiv").classList.remove("view");
+});
+
+email = document.getElementById(`emailSignIn`);
+pass = document.getElementById(`passwordSignIn`);
+
+document.getElementById(`signInBtn`).addEventListener(`click`, () => {
+  let data = {
+    email: email.value,
+    pass: pass.value,
+  };
+  console.log(data);
 });
 
 // PopUp

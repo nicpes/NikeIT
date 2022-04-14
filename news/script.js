@@ -32,6 +32,9 @@ const ul = document.getElementById("centermenu")
 const links = document.querySelectorAll("a")
 document.getElementById("ham-svg").addEventListener("click", showNavMenu);
 
+/* CHANGE COLOR UL NAVMENU */
+
+
 /* HIDE MENU' */
 
 function hideNavMenu() {

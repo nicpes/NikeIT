@@ -796,6 +796,9 @@ nav > div {
   display: flex;
   justify-content: center;
 }
+.cont-main picture img{
+  width: 100%;
+}
 
 .cont-sect-bot {
   display: flex;

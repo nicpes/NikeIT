@@ -33,6 +33,12 @@ const links = document.querySelectorAll("a")
 document.getElementById("ham-svg").addEventListener("click", showNavMenu);
 
 /* CHANGE COLOR UL NAVMENU */
+const link = document.getElementById("lim")
+function changeCol(){ links.forEach((element)=>{ element.style.color = "gray"})}
+
+
+ul.addEventListener("mouseover", changeCol)
+
 
 
 /* HIDE MENU' */
@@ -72,4 +78,4 @@ function hideSearchMenu() {
 }
 document
   .getElementById("exit-searchmenu")
-  .addEventListener("click", hideSearchMenu);
+  .addEventListener("click", hideSearchMenu)

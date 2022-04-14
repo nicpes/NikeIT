@@ -92,6 +92,7 @@ a {
 .navmenu-footer {
   position: fixed;
   bottom: 30px;
+  margin-left: -40px;
 }
 
 .navmenu-footer > ul > li > a {

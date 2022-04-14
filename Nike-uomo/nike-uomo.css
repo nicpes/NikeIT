@@ -237,6 +237,7 @@ nav > div {
   width: 100%;
   padding: 40px 0 70px 0;
   cursor: default;
+  z-index: 1;
 }
 
 .cont-nav > ul {
@@ -394,6 +395,10 @@ nav > div {
 
 #slide2 {
   transition: 2s ease;
+  -webkit-transition: 2s ease;
+  -moz-transition: 2s ease;
+  -ms-transition: 2s ease;
+  -o-transition: 2s ease;
 }
 
 .slide1Trans {
@@ -419,40 +424,6 @@ nav > div {
   -ms-transform: translateX(-15vw);
   -o-transform: translateX(-15vw);
 }
-
-/* @keyframes textIn {
-  0% {
-    transform: translateX(-100%);
-    -webkit-transform: translateX(-100%);
-    -moz-transform: translateX(-100%);
-    -ms-transform: translateX(-100%);
-    -o-transform: translateX(-100%);
-  }
-  100% {
-    transform: translateX(0%);
-    -webkit-transform: translateX(0%);
-    -moz-transform: translateX(0%);
-    -ms-transform: translateX(0%);
-    -o-transform: translateX(0%);
-  }
-}
-
-@keyframes textOut {
-  100% {
-    transform: translateX(0%);
-    -webkit-transform: translateX(0%);
-    -moz-transform: translateX(0%);
-    -ms-transform: translateX(0%);
-    -o-transform: translateX(0%);
-  }
-  0% {
-    transform: translateX(-100%);
-    -webkit-transform: translateX(-100%);
-    -moz-transform: translateX(-100%);
-    -ms-transform: translateX(-100%);
-    -o-transform: translateX(-100%);
-  }
-} */
 
 .cont-slider p {
   font-size: 12px;
